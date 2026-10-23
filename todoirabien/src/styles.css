@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
+
+/* Tipografía general de la web */
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #35473d;
+}
+
+/* Títulos de las secciones */
+h1 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  line-height: 1.3;
+}
+
+/* Enlaces y botones */
+a,
+button {
+  font-family: inherit;
+}
+
+/* Texto pequeño: que siga siendo legible */
+p,
+.footer-section a,
+.legal-links a {
+  line-height: 1.7;
+}

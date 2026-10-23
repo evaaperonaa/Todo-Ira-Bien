@@ -1,0 +1,15 @@
+
+{
+  "NAV": {
+    "HOME": "Inici",
+    "SPECIALTIES": "Especialitats",
+    "HOW_I_WORK": "Com treballe",
+    "APPOINTMENT": "Demanar cita"
+  },
+  "FOOTER": {
+    "NAVIGATION": "Navegació",
+    "CONTACT": "Contacte",
+    "REQUEST_APPOINTMENT": "Sol·licitar una cita",
+    "TAGLINE": "Psicologia i psicoteràpia"
+  }
+}

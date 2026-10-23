@@ -1,0 +1,325 @@
+
+:host {
+  display: block;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.25rem 6%;
+  background-color: #f7f3ec;
+  color: #35473d;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-decoration: none;
+  color: inherit;
+  flex-shrink: 0;
+}
+
+.brand-name {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+}
+
+.brand-description {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.navigation a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  color: #82917b;
+}
+
+.appointment-button {
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  background-color: #536b58;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.appointment-button:hover {
+  background-color: #405644;
+}
+
+@media (max-width: 850px) {
+  .header {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .navigation {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 1rem 5%;
+  }
+
+  .brand-name {
+    font-size: 1.2rem;
+  }
+
+  .brand-description {
+    font-size: 0.6rem;
+  }
+
+  .appointment-button {
+    padding: 0.65rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .navigation a {
+    font-size: 0.85rem;
+  }
+}
+
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.language-selector {
+  position: relative;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid #d9ded5;
+  border-radius: 6px;
+  background: transparent;
+  color: #35473d;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.language-button:hover {
+  background: #eaeDE5;
+}
+
+.language-code {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.chevron {
+  font-size: 1rem;
+}
+
+.language-menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  z-index: 100;
+  min-width: 175px;
+  padding: 0.35rem;
+  border: 1px solid #e0e3dc;
+  border-radius: 8px;
+  background: #fffefa;
+  box-shadow: 0 8px 24px rgb(53 71 61 / 12%);
+}
+
+.language-menu button {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: #35473d;
+  text-align: left;
+  cursor: pointer;
+}
+
+.language-menu button:hover,
+.language-menu button.selected {
+  background: #eaeDE5;
+}
+
+.valencia-flag {
+  display: inline-flex;
+  width: 24px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 1px solid #deded5;
+}
+
+.blue-stripe {
+  width: 20%;
+  background: #1761a0;
+}
+
+.yellow-stripe {
+  width: 30%;
+  background: #f4cc37;
+}
+
+.red-stripes {
+  flex: 1;
+  background: repeating-linear-gradient(
+    to bottom,
+    #d62828 0,
+    #d62828 2px,
+    #f4cc37 2px,
+    #f4cc37 4px
+  );
+}
+
+@media (max-width: 850px) {
+  .header-actions {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-actions {
+    gap: 0.5rem;
+  }
+}
+
+
+/* Selector de idioma */
+.language-selector {
+  position: relative;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #d9ded5;
+  border-radius: 6px;
+  background: transparent;
+  color: #35473d;
+  cursor: pointer;
+}
+
+.language-button:hover {
+  background: #eaeDE5;
+}
+
+/* Tamaño común de las banderas */
+.flag {
+  display: inline-flex;
+  width: 26px;
+  height: 17px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border: 1px solid rgb(0 0 0 / 12%);
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+/* Bandera de España */
+.flag-spain {
+  background: linear-gradient(
+    to bottom,
+    #aa151b 0%,
+    #aa151b 25%,
+    #f1bf00 25%,
+    #f1bf00 75%,
+    #aa151b 75%,
+    #aa151b 100%
+  );
+}
+
+/* Bandera de la Comunitat Valenciana */
+.flag-valencia .blue-stripe {
+  width: 25%;
+  background: #1761a0;
+}
+
+.flag-valencia .yellow-stripe {
+  width: 25%;
+  background: #f4cc37;
+}
+
+.flag-valencia .red-stripes {
+  flex: 1;
+  background: repeating-linear-gradient(
+    to bottom,
+    #d62828 0,
+    #d62828 2px,
+    #f4cc37 2px,
+    #f4cc37 4px
+  );
+}
+
+/* Menú desplegable */
+.language-menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  z-index: 100;
+  min-width: 175px;
+  padding: 0.35rem;
+  border: 1px solid #e0e3dc;
+  border-radius: 8px;
+  background: #fffefa;
+  box-shadow: 0 8px 24px rgb(53 71 61 / 12%);
+}
+
+.language-menu button {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: #35473d;
+  text-align: left;
+  cursor: pointer;
+}
+
+.language-menu button:hover,
+.language-menu button.selected {
+  background: #eaeDE5;
+}
+
+.language-code {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.chevron {
+  font-size: 1rem;
+}
