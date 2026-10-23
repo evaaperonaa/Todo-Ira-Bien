@@ -40,4 +40,4 @@ El diseño y las funcionalidades se irán implementando progresivamente durante 
 
 ---
 
-Built with ♥ and a touch of blue by Evly
+***Built with ♥ and a touch of blue by [Evly](https://github.com/evaaperonaa)***
