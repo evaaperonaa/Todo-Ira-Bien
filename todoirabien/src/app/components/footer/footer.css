@@ -3,31 +3,36 @@
   display: block;
 }
 
+/* Footer */
 .footer {
   padding: 3rem 6% 1.25rem;
-  background-color: #35473d;
-  color: #f7f3ec;
+  background-color: #002062;
+  color: #FFFFFF;
 }
 
+/* Distribución principal */
 .footer-main {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1.4fr 0.8fr 0.9fr 1.5fr;
   gap: 2rem;
   padding-bottom: 2.5rem;
 }
 
+/* Marca */
 .brand-name {
-  color: inherit;
+  color: #FFFFFF;
   font-family: Georgia, serif;
   font-size: 1.5rem;
   text-decoration: none;
 }
 
 .footer-brand p {
-  color: #d5ddd2;
-  font-size: 0.9rem;
+  color: #E4EEF5;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
+/* Secciones */
 .footer-section {
   display: flex;
   flex-direction: column;
@@ -37,86 +42,40 @@
 
 .footer-section h2 {
   margin: 0 0 0.25rem;
-  font-size: 1rem;
+  color: #FFFFFF;
+  font-size: 1.15rem;
+  line-height: 1.4;
 }
 
 .footer-section a,
 .legal-links a {
-  color: #d5ddd2;
-  font-size: 0.9rem;
+  color: #E4EEF5;
+  font-size: 1rem;
+  line-height: 1.7;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .footer-section a:hover,
 .legal-links a:hover {
-  color: white;
-}
-
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid #637267;
-}
-
-.footer-bottom p {
-  margin: 0;
-  color: #d5ddd2;
-  font-size: 0.8rem;
-}
-
-.legal-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.legal-links a {
-  font-size: 0.8rem;
-}
-
-@media (max-width: 650px) {
-  .footer-main {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .footer-brand {
-    grid-column: 1 / -1;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-
-/* Distribución principal del footer */
-.footer-main {
-  display: grid;
-  grid-template-columns: 1.4fr 0.8fr 0.9fr 1.5fr;
-  gap: 2rem;
-  padding-bottom: 2.5rem;
+  color: #7DDBDE;
 }
 
 /* Dirección */
 .location-address {
   margin: 0;
-  color: #d5ddd2;
-  font-size: 0.85rem;
-  line-height: 1.6;
+  color: #E4EEF5;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
-/* Contenedor del mapa */
+/* Mapa de Google */
 .map-container {
   width: 100%;
   height: 190px;
   overflow: hidden;
   border-radius: 8px;
-  background-color: #eaeDE5;
+  background-color: rgb(0 140 150 / 20%);
 }
 
 .map-container iframe {
@@ -126,20 +85,50 @@
   border: 0;
 }
 
-/* Enlace para abrir Google Maps */
+/* Enlace para llegar a la consulta */
 .map-link {
   margin-top: 0.25rem;
-  color: #d5ddd2;
-  font-size: 0.85rem;
+  color: #E4EEF5;
+  font-size: 1rem;
+  line-height: 1.7;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .map-link:hover {
-  color: white;
+  color: #7DDBDE;
 }
 
-/* Adaptación a tablets */
+/* Parte inferior */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgb(255 255 255 / 25%);
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #E4EEF5;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.legal-links a {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Tablets */
 @media (max-width: 1000px) {
   .footer-main {
     grid-template-columns: 1fr 1fr;
@@ -150,7 +139,7 @@
   }
 }
 
-/* Adaptación a móviles */
+/* Móviles */
 @media (max-width: 650px) {
   .footer-main {
     grid-template-columns: 1fr;
@@ -169,28 +158,4 @@
     flex-direction: column;
     align-items: flex-start;
   }
-}
-
-
-.footer-brand p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.footer-section h2 {
-  font-size: 1.15rem;
-  line-height: 1.4;
-}
-
-.footer-section a,
-.location-address,
-.map-link {
-  font-size: 1rem;
-  line-height: 1.7;
-}
-
-.footer-bottom p,
-.legal-links a {
-  font-size: 0.9rem;
-  line-height: 1.6;
 }
