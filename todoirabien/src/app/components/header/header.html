@@ -1,37 +1,28 @@
-
 <header class="header">
-  <a
-    class="brand"
-    routerLink="/"
-    aria-label="Ir a inicio"
-  >
-    <span class="brand-name">Nombre Apellido</span>
 
-    <span class="brand-description">
-      {{ 'FOOTER.TAGLINE' | translate }}
+  <a class="brand" routerLink="/" aria-label="Ir a inicio">
+    <img src="/logo.png" alt="Logo de la consulta" class="brand-logo">
+
+    <span class="brand-text">
+      <span class="brand-name">Pepe Almeria Serrano</span>
+
+      <span class="brand-description">
+        {{ 'FOOTER.TAGLINE' | translate }}
+      </span>
     </span>
   </a>
 
+
   <nav class="navigation" aria-label="Navegación principal">
-    <a
-      routerLink="/"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-    >
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
       {{ 'NAV.HOME' | translate }}
     </a>
 
-    <a
-      routerLink="/especialidades"
-      routerLinkActive="active"
-    >
+    <a routerLink="/especialidades" routerLinkActive="active">
       {{ 'NAV.SPECIALTIES' | translate }}
     </a>
 
-    <a
-      routerLink="/como-trabajo"
-      routerLinkActive="active"
-    >
+    <a routerLink="/como-trabajo" routerLinkActive="active">
       {{ 'NAV.HOW_I_WORK' | translate }}
     </a>
   </nav>
@@ -39,77 +30,49 @@
   <div class="header-actions">
     <!-- Selector de idioma -->
     <div class="language-selector">
-      <button
-        type="button"
-        class="language-button"
-        (click)="alternarMenuIdiomas()"
-        [attr.aria-expanded]="menuIdiomasAbierto"
-        aria-label="Cambiar idioma"
-      >
+      <button type="button" class="language-button" (click)="alternarMenuIdiomas()"
+        [attr.aria-expanded]="menuIdiomasAbierto" aria-label="Cambiar idioma">
         @if (idiomaActual === 'es') {
-          <span
-            class="flag flag-spain"
-            aria-hidden="true"
-          ></span>
+        <span class="flag flag-spain" aria-hidden="true"></span>
 
-          <span class="language-code">ES</span>
+        <span class="language-code">ES</span>
         } @else {
-          <span
-            class="flag flag-valencia"
-            aria-hidden="true"
-          >
-            <span class="blue-stripe"></span>
-            <span class="yellow-stripe"></span>
-            <span class="red-stripes"></span>
-          </span>
+        <span class="flag flag-valencia" aria-hidden="true">
+          <span class="blue-stripe"></span>
+          <span class="yellow-stripe"></span>
+          <span class="red-stripes"></span>
+        </span>
 
-          <span class="language-code">VA</span>
+        <span class="language-code">VA</span>
         }
 
       </button>
 
       @if (menuIdiomasAbierto) {
-        <div class="language-menu">
-          <!-- Castellano -->
-          <button
-            type="button"
-            (click)="cambiarIdioma('es')"
-            [class.selected]="idiomaActual === 'es'"
-          >
-            <span
-              class="flag flag-spain"
-              aria-hidden="true"
-            ></span>
+      <div class="language-menu">
+        <!-- Castellano -->
+        <button type="button" (click)="cambiarIdioma('es')" [class.selected]="idiomaActual === 'es'">
+          <span class="flag flag-spain" aria-hidden="true"></span>
 
-            <span>Castellano</span>
-          </button>
+          <span>Castellano</span>
+        </button>
 
-          <!-- Valenciano -->
-          <button
-            type="button"
-            (click)="cambiarIdioma('va')"
-            [class.selected]="idiomaActual === 'va'"
-          >
-            <span
-              class="flag flag-valencia"
-              aria-hidden="true"
-            >
-              <span class="blue-stripe"></span>
-              <span class="yellow-stripe"></span>
-              <span class="red-stripes"></span>
-            </span>
+        <!-- Valenciano -->
+        <button type="button" (click)="cambiarIdioma('va')" [class.selected]="idiomaActual === 'va'">
+          <span class="flag flag-valencia" aria-hidden="true">
+            <span class="blue-stripe"></span>
+            <span class="yellow-stripe"></span>
+            <span class="red-stripes"></span>
+          </span>
 
-            <span>Valencià</span>
-          </button>
-        </div>
+          <span>Valencià</span>
+        </button>
+      </div>
       }
     </div>
 
     <!-- Botón de cita -->
-    <a
-      class="appointment-button"
-      routerLink="/cita"
-    >
+    <a class="appointment-button" routerLink="/cita">
       {{ 'NAV.APPOINTMENT' | translate }}
     </a>
   </div>

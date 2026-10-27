@@ -2,6 +2,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap');
 
+
+:root {
+  /* Colores de la marca */
+  --color-terracotta: #C83212;
+  --color-turquoise: #008C96;
+  --color-green: #548236;
+  --color-blue: #002062;
+
+  /* Fondos */
+  --color-background: #F8F7F2;
+  --color-surface: #FFFFFF;
+  --color-turquoise-soft: rgb(0 140 150 / 20%);
+
+  /* Textos */
+  --color-text: #002062;
+  --color-text-light: #FFFFFF;
+}
+
+
 /* Tipografía general de la web */
 body {
   font-family: 'Lato', sans-serif;
@@ -33,3 +52,4 @@ p,
 .legal-links a {
   line-height: 1.7;
 }
+
