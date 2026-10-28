@@ -1,4 +1,3 @@
-
 {
   "NAV": {
     "HOME": "Inici",
@@ -21,33 +20,37 @@
     "HERO_HOW_I_WORK": "Com treballe",
     "HERO_NOTE": "Tu marques el ritme. Tu decideixes fins on arribar.",
     "HERO_IMAGE_ALT": "Retrat del psicòleg a la seua consulta",
-
     "SPECIALTIES": {
       "LABEL": "Les meues especialitats",
       "TITLE": "En què puc ajudar-te?",
       "DESCRIPTION": "Cada persona té la seua pròpia història i les seues pròpies necessitats. Descobreix les diferents àrees en què puc acompanyar-te.",
       "DISCOVER": "Descobrir-ne més",
       "VIEW_ALL": "Veure totes les especialitats",
-
       "GENERAL": {
         "TITLE": "Psicologia General Sanitària",
         "DESCRIPTION": "Un espai per a comprendre les teues emocions, afrontar dificultats i trobar eines per al teu benestar."
       },
-
       "FORENSIC": {
         "TITLE": "Psicologia Forense",
         "DESCRIPTION": "Avaluació psicològica especialitzada en l'àmbit judicial, amb un enfocament professional i rigorós."
       },
-
       "SEX_COACHING": {
         "TITLE": "Sex Coaching",
         "DESCRIPTION": "Un acompanyament pròxim per a explorar la sexualitat, millorar la comunicació i treballar el benestar íntim."
       },
-
       "ORGANIZATIONS": {
         "TITLE": "Psicologia del Treball i de les Organitzacions",
         "DESCRIPTION": "Solucions per a millorar el benestar laboral, les relacions professionals i el desenvolupament d'equips."
       }
+    },
+    "ABOUT": {
+      "LABEL": "Un poc sobre mi",
+      "TITLE": "Abans de començar, vull que em conegues.",
+      "DESCRIPTION": "Crec en una psicologia pròxima, sense etiquetes ni judicis. Un espai on pugues parlar amb tranquil·litat, sentir-te escoltat i trobar noves maneres d'afrontar allò que et preocupa.",
+      "DESCRIPTION_SECOND": "No es tracta de dir-te com viure la teua vida, sinó d'acompanyar-te perquè trobes les teues pròpies respostes, al teu ritme i amb eines que pugues utilitzar en el teu dia a dia.",
+      "BUTTON": "Descobreix com treballe",
+      "VIDEO_LABEL": "Vídeo de presentació del psicòleg",
+      "VIDEO_FALLBACK": "El teu navegador no permet reproduir aquest vídeo."
     }
   }
 }

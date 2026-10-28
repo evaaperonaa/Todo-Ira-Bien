@@ -1,14 +1,13 @@
 <main>
 
-    <!-- ========================================
+    <!-- =====================================
        HERO - PRESENTACIÓN PRINCIPAL
-  ======================================== -->
+  ====================================== -->
 
     @for (key of [animationKey()]; track key) {
 
     <section class="hero">
 
-        <!-- Texto de presentación -->
         <div class="hero-content">
 
             <span class="hero-label">
@@ -17,7 +16,6 @@
 
             <h1 class="hero-title">
                 {{ 'HOME.HERO_TITLE' | translate }}
-
                 <span>
                     {{ 'HOME.HERO_TITLE_HIGHLIGHT' | translate }}
                 </span>
@@ -27,7 +25,6 @@
                 {{ 'HOME.HERO_DESCRIPTION' | translate }}
             </p>
 
-            <!-- Botones del hero -->
             <div class="hero-actions">
 
                 <a routerLink="/cita" class="hero-button-primary">
@@ -46,7 +43,6 @@
 
         </div>
 
-        <!-- Fotografía del psicólogo -->
         <div class="hero-image-container">
 
             <img src="/home.jpg" [alt]="'HOME.HERO_IMAGE_ALT' | translate" class="hero-image" fetchpriority="high">
@@ -58,15 +54,14 @@
     }
 
 
-    <!-- ========================================
+    <!-- =====================================
        ESPECIALIDADES
-  ======================================== -->
+  ====================================== -->
 
     @for (key of [animationKey()]; track key) {
 
     <section class="specialties" id="especialidades">
 
-        <!-- Encabezado de especialidades -->
         <div class="specialties-header">
 
             <span class="specialties-label">
@@ -83,11 +78,10 @@
 
         </div>
 
-
-        <!-- Cuadrícula de tarjetas -->
         <div class="specialties-grid">
 
-            <!-- PSICOLOGÍA GENERAL SANITARIA -->
+            <!-- Psicología General Sanitaria -->
+
             <a routerLink="/psico-general" class="specialty-card">
 
                 <div class="specialty-icon">
@@ -110,7 +104,8 @@
             </a>
 
 
-            <!-- PSICOLOGÍA FORENSE -->
+            <!-- Psicología Forense -->
+
             <a routerLink="/psico-forense" class="specialty-card">
 
                 <div class="specialty-icon">
@@ -133,7 +128,8 @@
             </a>
 
 
-            <!-- SEX COACHING -->
+            <!-- Sex Coaching -->
+
             <a routerLink="/sex-coaching" class="specialty-card">
 
                 <div class="specialty-icon">
@@ -156,7 +152,8 @@
             </a>
 
 
-            <!-- PSICOLOGÍA DEL TRABAJO Y ORGANIZACIONES -->
+            <!-- Psicología del Trabajo y Organizaciones -->
+
             <a routerLink="/psico-organizaciones" class="specialty-card">
 
                 <div class="specialty-icon">
@@ -181,7 +178,8 @@
         </div>
 
 
-        <!-- Botón para ver todas las especialidades -->
+        <!-- Botón ver todas -->
+
         <div class="specialties-footer">
 
             <a routerLink="/especialidades" class="specialties-all">
@@ -194,5 +192,61 @@
     </section>
 
     }
+
+
+    <!-- =====================================
+       PRESENTACIÓN DEL PSICÓLOGO
+  ====================================== -->
+
+    <section class="about-section">
+
+        <div class="about-container">
+
+            <!-- Vídeo -->
+
+            <div class="about-video-container">
+
+                <video class="about-video" controls preload="none" poster="/psicologo.jpg" playsinline
+                    [attr.aria-label]="'HOME.ABOUT.VIDEO_LABEL' | translate">
+
+                    <source src="/videos/presentacion.mp4" type="video/mp4">
+
+                    {{ 'HOME.ABOUT.VIDEO_FALLBACK' | translate }}
+
+                </video>
+
+            </div>
+
+
+            <!-- Texto de presentación -->
+
+            <div class="about-content">
+
+                <span class="about-label">
+                    {{ 'HOME.ABOUT.LABEL' | translate }}
+                </span>
+
+                <h2 class="about-title">
+                    {{ 'HOME.ABOUT.TITLE' | translate }}
+                </h2>
+
+                <p class="about-description">
+                    {{ 'HOME.ABOUT.DESCRIPTION' | translate }}
+                </p>
+
+                <p class="about-description">
+                    {{ 'HOME.ABOUT.DESCRIPTION_SECOND' | translate }}
+                </p>
+
+                <a routerLink="/como-trabajo" class="about-button">
+                    {{ 'HOME.ABOUT.BUTTON' | translate }}
+                    <span aria-hidden="true">→</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
 
 </main>

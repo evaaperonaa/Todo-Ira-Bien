@@ -1,4 +1,3 @@
-
 {
   "NAV": {
     "HOME": "Inicio",
@@ -21,33 +20,37 @@
     "HERO_HOW_I_WORK": "Cómo trabajo",
     "HERO_NOTE": "Tú marcas el ritmo. Tú decides hasta dónde llegar.",
     "HERO_IMAGE_ALT": "Retrato del psicólogo en su consulta",
-
     "SPECIALTIES": {
       "LABEL": "Mis especialidades",
       "TITLE": "¿En qué puedo ayudarte?",
       "DESCRIPTION": "Cada persona tiene su propia historia y sus propias necesidades. Descubre las diferentes áreas en las que puedo acompañarte.",
       "DISCOVER": "Descubrir más",
       "VIEW_ALL": "Ver todas las especialidades",
-
       "GENERAL": {
         "TITLE": "Psicología General Sanitaria",
         "DESCRIPTION": "Un espacio para comprender tus emociones, afrontar dificultades y encontrar herramientas para tu bienestar."
       },
-
       "FORENSIC": {
         "TITLE": "Psicología Forense",
         "DESCRIPTION": "Evaluación psicológica especializada en el ámbito judicial, con un enfoque profesional y riguroso."
       },
-
       "SEX_COACHING": {
         "TITLE": "Sex Coaching",
         "DESCRIPTION": "Un acompañamiento cercano para explorar la sexualidad, mejorar la comunicación y trabajar el bienestar íntimo."
       },
-
       "ORGANIZATIONS": {
         "TITLE": "Psicología del Trabajo y de las Organizaciones",
         "DESCRIPTION": "Soluciones para mejorar el bienestar laboral, las relaciones profesionales y el desarrollo de equipos."
       }
+    },
+    "ABOUT": {
+      "LABEL": "Un poco sobre mí",
+      "TITLE": "Antes de empezar, quiero que me conozcas.",
+      "DESCRIPTION": "Creo en una psicología cercana, sin etiquetas ni juicios. Un espacio donde puedas hablar con tranquilidad, sentirte escuchado y encontrar nuevas formas de afrontar lo que te preocupa.",
+      "DESCRIPTION_SECOND": "No se trata de decirte cómo vivir tu vida, sino de acompañarte para que encuentres tus propias respuestas, a tu ritmo y con herramientas que puedas utilizar en tu día a día.",
+      "BUTTON": "Descubre cómo trabajo",
+      "VIDEO_LABEL": "Vídeo de presentación del psicólogo",
+      "VIDEO_FALLBACK": "Tu navegador no permite reproducir este vídeo."
     }
   }
 }
