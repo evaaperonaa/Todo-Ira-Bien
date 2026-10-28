@@ -1,8 +1,14 @@
 <main>
+
+    <!-- =================================== -->
+    <!-- HERO - PRESENTACIÓN PRINCIPAL -->
+    <!-- =================================== -->
+
     @for (key of [animationKey()]; track key) {
+
     <section class="hero">
 
-        <!-- Presentación -->
+        <!-- Texto de presentación -->
         <div class="hero-content">
 
             <span class="hero-label">
@@ -11,6 +17,7 @@
 
             <h1 class="hero-title">
                 {{ 'HOME.HERO_TITLE' | translate }}
+
                 <span>
                     {{ 'HOME.HERO_TITLE_HIGHLIGHT' | translate }}
                 </span>
@@ -20,7 +27,9 @@
                 {{ 'HOME.HERO_DESCRIPTION' | translate }}
             </p>
 
+            <!-- Botones -->
             <div class="hero-actions">
+
                 <a routerLink="/cita" class="hero-button-primary">
                     {{ 'HOME.HERO_APPOINTMENT' | translate }}
                 </a>
@@ -28,6 +37,7 @@
                 <a routerLink="/como-trabajo" class="hero-button-secondary">
                     {{ 'HOME.HERO_HOW_I_WORK' | translate }}
                 </a>
+
             </div>
 
             <p class="hero-note">
@@ -36,18 +46,27 @@
 
         </div>
 
-        <!-- Fotografía -->
+        <!-- Fotografía del psicólogo -->
         <div class="hero-image-container">
+
             <img src="/home.jpg" [alt]="'HOME.HERO_IMAGE_ALT' | translate" class="hero-image" fetchpriority="high">
+
         </div>
 
     </section>
+
     }
 
+
+    <!-- =================================== -->
     <!-- SECCIÓN DE ESPECIALIDADES -->
+    <!-- =================================== -->
+
     <section class="specialties" id="especialidades">
 
+        <!-- Encabezado -->
         <div class="specialties-header">
+
             <span class="specialties-label">
                 Mis especialidades
             </span>
@@ -61,19 +80,23 @@
                 necesidades. Descubre las diferentes áreas en las
                 que puedo acompañarte.
             </p>
+
         </div>
 
+
+        <!-- Cuadrícula de especialidades -->
         <div class="specialties-grid">
 
-            <!-- Psicología General -->
+            <!-- PSICOLOGÍA GENERAL SANITARIA -->
             <a routerLink="/psico-general" class="specialty-card">
+
                 <div class="specialty-icon">
-                    <span class="material-symbols-outlined">
-                        psychology
-                    </span>
+                    <img src="/iconos/general-icon.png" alt="" loading="lazy">
                 </div>
 
-                <h3>Psicología General</h3>
+                <h3>
+                    Psicología General Sanitaria
+                </h3>
 
                 <p>
                     Un espacio para comprender tus emociones,
@@ -84,17 +107,20 @@
                 <span class="specialty-link">
                     Descubrir más →
                 </span>
+
             </a>
 
-            <!-- Psicología Forense -->
+
+            <!-- PSICOLOGÍA FORENSE -->
             <a routerLink="/psico-forense" class="specialty-card">
+
                 <div class="specialty-icon">
-                    <span class="material-symbols-outlined">
-                        balance
-                    </span>
+                    <img src="/iconos/forense-icon.png" alt="" loading="lazy">
                 </div>
 
-                <h3>Psicología Forense</h3>
+                <h3>
+                    Psicología Forense
+                </h3>
 
                 <p>
                     Evaluación psicológica especializada en
@@ -105,17 +131,20 @@
                 <span class="specialty-link">
                     Descubrir más →
                 </span>
+
             </a>
 
-            <!-- Sex Coaching -->
+
+            <!-- SEX COACHING -->
             <a routerLink="/sex-coaching" class="specialty-card">
+
                 <div class="specialty-icon">
-                    <span class="material-symbols-outlined">
-                        favorite
-                    </span>
+                    <img src="/iconos/sex-coaching-icon.png" alt="" loading="lazy">
                 </div>
 
-                <h3>Sex Coaching</h3>
+                <h3>
+                    Sex Coaching
+                </h3>
 
                 <p>
                     Un acompañamiento cercano para explorar
@@ -126,17 +155,20 @@
                 <span class="specialty-link">
                     Descubrir más →
                 </span>
+
             </a>
 
-            <!-- Psicología de las Organizaciones -->
+
+            <!-- PSICOLOGÍA DE LAS ORGANIZACIONES -->
             <a routerLink="/psico-organizaciones" class="specialty-card">
+
                 <div class="specialty-icon">
-                    <span class="material-symbols-outlined">
-                        groups
-                    </span>
+                    <img src="/iconos/organizaciones-icon.png" alt="" loading="lazy">
                 </div>
 
-                <h3>Psicología de las Organizaciones</h3>
+                <h3>
+                    Psicología del Trabajo y de las Organizaciones
+                </h3>
 
                 <p>
                     Soluciones para mejorar el bienestar laboral,
@@ -147,18 +179,22 @@
                 <span class="specialty-link">
                     Descubrir más →
                 </span>
+
             </a>
 
         </div>
 
+
+        <!-- Botón para ver todas las especialidades -->
         <div class="specialties-footer">
+
             <a routerLink="/especialidades" class="specialties-all">
                 Ver todas las especialidades
                 <span aria-hidden="true">→</span>
             </a>
+
         </div>
 
     </section>
-
 
 </main>
