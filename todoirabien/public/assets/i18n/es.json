@@ -1,4 +1,3 @@
-
 {
   "NAV": {
     "HOME": "Inicio",
@@ -11,5 +10,15 @@
     "CONTACT": "Contacto",
     "REQUEST_APPOINTMENT": "Solicitar una cita",
     "TAGLINE": "Psicología y psicoterapia"
+  },
+  "HOME": {
+    "HERO_LABEL": "Psicología y psicoterapia",
+    "HERO_TITLE": "No hace falta estar mal para",
+    "HERO_TITLE_HIGHLIGHT": "empezar a sentirte mejor.",
+    "HERO_DESCRIPTION": "Un espacio seguro y tranquilo para hablar, comprender lo que te pasa y encontrar nuevas herramientas a tu ritmo. Sin etiquetas, sin jergas complicadas y sin prisas.",
+    "HERO_APPOINTMENT": "Pedir cita",
+    "HERO_HOW_I_WORK": "Cómo trabajo",
+    "HERO_NOTE": "Tú marcas el ritmo. Tú decides hasta dónde llegar.",
+    "HERO_IMAGE_ALT": "Retrato del psicólogo en su consulta"
   }
 }

@@ -1,1 +1,164 @@
-<p>home works!</p>
+<main>
+    @for (key of [animationKey()]; track key) {
+    <section class="hero">
+
+        <!-- Presentación -->
+        <div class="hero-content">
+
+            <span class="hero-label">
+                {{ 'HOME.HERO_LABEL' | translate }}
+            </span>
+
+            <h1 class="hero-title">
+                {{ 'HOME.HERO_TITLE' | translate }}
+                <span>
+                    {{ 'HOME.HERO_TITLE_HIGHLIGHT' | translate }}
+                </span>
+            </h1>
+
+            <p class="hero-description">
+                {{ 'HOME.HERO_DESCRIPTION' | translate }}
+            </p>
+
+            <div class="hero-actions">
+                <a routerLink="/cita" class="hero-button-primary">
+                    {{ 'HOME.HERO_APPOINTMENT' | translate }}
+                </a>
+
+                <a routerLink="/como-trabajo" class="hero-button-secondary">
+                    {{ 'HOME.HERO_HOW_I_WORK' | translate }}
+                </a>
+            </div>
+
+            <p class="hero-note">
+                {{ 'HOME.HERO_NOTE' | translate }}
+            </p>
+
+        </div>
+
+        <!-- Fotografía -->
+        <div class="hero-image-container">
+            <img src="/home.jpg" [alt]="'HOME.HERO_IMAGE_ALT' | translate" class="hero-image" fetchpriority="high">
+        </div>
+
+    </section>
+    }
+
+    <!-- SECCIÓN DE ESPECIALIDADES -->
+    <section class="specialties" id="especialidades">
+
+        <div class="specialties-header">
+            <span class="specialties-label">
+                Mis especialidades
+            </span>
+
+            <h2 class="specialties-title">
+                ¿En qué puedo ayudarte?
+            </h2>
+
+            <p class="specialties-description">
+                Cada persona tiene su propia historia y sus propias
+                necesidades. Descubre las diferentes áreas en las
+                que puedo acompañarte.
+            </p>
+        </div>
+
+        <div class="specialties-grid">
+
+            <!-- Psicología General -->
+            <a routerLink="/psico-general" class="specialty-card">
+                <div class="specialty-icon">
+                    <span class="material-symbols-outlined">
+                        psychology
+                    </span>
+                </div>
+
+                <h3>Psicología General</h3>
+
+                <p>
+                    Un espacio para comprender tus emociones,
+                    afrontar dificultades y encontrar herramientas
+                    para tu bienestar.
+                </p>
+
+                <span class="specialty-link">
+                    Descubrir más →
+                </span>
+            </a>
+
+            <!-- Psicología Forense -->
+            <a routerLink="/psico-forense" class="specialty-card">
+                <div class="specialty-icon">
+                    <span class="material-symbols-outlined">
+                        balance
+                    </span>
+                </div>
+
+                <h3>Psicología Forense</h3>
+
+                <p>
+                    Evaluación psicológica especializada en
+                    el ámbito judicial, con un enfoque
+                    profesional y riguroso.
+                </p>
+
+                <span class="specialty-link">
+                    Descubrir más →
+                </span>
+            </a>
+
+            <!-- Sex Coaching -->
+            <a routerLink="/sex-coaching" class="specialty-card">
+                <div class="specialty-icon">
+                    <span class="material-symbols-outlined">
+                        favorite
+                    </span>
+                </div>
+
+                <h3>Sex Coaching</h3>
+
+                <p>
+                    Un acompañamiento cercano para explorar
+                    la sexualidad, mejorar la comunicación
+                    y trabajar el bienestar íntimo.
+                </p>
+
+                <span class="specialty-link">
+                    Descubrir más →
+                </span>
+            </a>
+
+            <!-- Psicología de las Organizaciones -->
+            <a routerLink="/psico-organizaciones" class="specialty-card">
+                <div class="specialty-icon">
+                    <span class="material-symbols-outlined">
+                        groups
+                    </span>
+                </div>
+
+                <h3>Psicología de las Organizaciones</h3>
+
+                <p>
+                    Soluciones para mejorar el bienestar laboral,
+                    las relaciones profesionales y el
+                    desarrollo de equipos.
+                </p>
+
+                <span class="specialty-link">
+                    Descubrir más →
+                </span>
+            </a>
+
+        </div>
+
+        <div class="specialties-footer">
+            <a routerLink="/especialidades" class="specialties-all">
+                Ver todas las especialidades
+                <span aria-hidden="true">→</span>
+            </a>
+        </div>
+
+    </section>
+
+
+</main>

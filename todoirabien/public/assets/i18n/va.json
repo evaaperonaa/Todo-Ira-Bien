@@ -1,4 +1,3 @@
-
 {
   "NAV": {
     "HOME": "Inici",
@@ -11,5 +10,15 @@
     "CONTACT": "Contacte",
     "REQUEST_APPOINTMENT": "Sol·licitar una cita",
     "TAGLINE": "Psicologia i psicoteràpia"
+  },
+  "HOME": {
+    "HERO_LABEL": "Psicologia i psicoteràpia",
+    "HERO_TITLE": "No cal estar malament per a",
+    "HERO_TITLE_HIGHLIGHT": "començar a sentir-te millor.",
+    "HERO_DESCRIPTION": "Un espai segur i tranquil per a parlar, comprendre què et passa i trobar noves eines al teu ritme. Sense etiquetes, sense argot complicat i sense presses.",
+    "HERO_APPOINTMENT": "Demanar cita",
+    "HERO_HOW_I_WORK": "Com treballe",
+    "HERO_NOTE": "Tu marques el ritme. Tu decideixes fins on arribar.",
+    "HERO_IMAGE_ALT": "Retrat del psicòleg a la seua consulta"
   }
 }
