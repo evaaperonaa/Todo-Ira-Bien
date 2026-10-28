@@ -1,4 +1,8 @@
 
+/* ========================================
+   CONFIGURACIÓN GENERAL
+======================================== */
+
 :host {
   display: block;
 }
@@ -26,6 +30,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 1.5rem;
+
   max-width: 650px;
 
   animation: fadeInUp 0.9s ease-out both;
@@ -45,10 +50,12 @@
 
 .hero-title {
   margin: 0;
+
   font-family: Georgia, serif;
   font-size: clamp(2.5rem, 4vw, 4.5rem);
   font-weight: 400;
   line-height: 1.15;
+
   color: #002062;
 }
 
@@ -61,6 +68,7 @@
 .hero-description {
   margin: 0;
   max-width: 550px;
+
   color: #33466B;
   font-size: 1.1rem;
   line-height: 1.8;
@@ -73,6 +81,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+
   margin-top: 0.5rem;
 }
 
@@ -86,6 +95,7 @@
   padding: 0.85rem 1.6rem;
 
   border-radius: 8px;
+
   font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
@@ -95,6 +105,8 @@
     color 0.25s ease,
     transform 0.25s ease;
 }
+
+/* Botón principal */
 
 .hero-button-primary {
   background-color: #002062;
@@ -107,10 +119,12 @@
   transform: translateY(-2px);
 }
 
+/* Botón secundario */
+
 .hero-button-secondary {
   border: 1px solid #008C96;
-  color: #002062;
   background-color: transparent;
+  color: #002062;
 }
 
 .hero-button-secondary:hover {
@@ -122,21 +136,27 @@
 
 .hero-note {
   margin: 0;
+
   color: #548236;
   font-size: 0.95rem;
   font-style: italic;
 }
 
-/* Fotografía */
+/* ========================================
+   FOTOGRAFÍA DEL HERO
+======================================== */
 
 .hero-image-container {
   position: relative;
+
   width: 100%;
   max-width: 480px;
   justify-self: center;
 
   animation: fadeInRight 1s ease-out 0.2s both;
 }
+
+/* Fondo turquesa desplazado */
 
 .hero-image-container::before {
   content: "";
@@ -151,27 +171,33 @@
   border-radius: 20px;
 }
 
+/* Imagen */
+
 .hero-image {
   position: relative;
   display: block;
-  width: 100%;
 
+  width: 100%;
   aspect-ratio: 4 / 5;
+
   object-fit: cover;
   object-position: center;
 
   border-radius: 20px;
+
   box-shadow: 0 20px 45px rgb(0 32 98 / 12%);
 }
 
 /* ========================================
-   ESPECIALIDADES
+   ESPECIALIDADES - SECCIÓN
 ======================================== */
 
 .specialties {
   position: relative;
+
   padding: 6rem 6%;
   background-color: #FFFFFF;
+
   overflow: hidden;
 }
 
@@ -180,13 +206,16 @@
 .specialties-header {
   position: relative;
   z-index: 1;
+
   max-width: 750px;
   margin: 0 auto 3.5rem;
+
   text-align: center;
 }
 
 .specialties-label {
   color: #008C96;
+
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.2em;
@@ -195,6 +224,7 @@
 
 .specialties-title {
   margin: 1rem 0;
+
   color: #002062;
   font-family: Georgia, serif;
   font-size: clamp(2.2rem, 4vw, 3.5rem);
@@ -204,12 +234,15 @@
 
 .specialties-description {
   margin: 0;
+
   color: #405674;
   font-size: 1.05rem;
   line-height: 1.8;
 }
 
-/* Cuadrícula de tarjetas */
+/* ========================================
+   CUADRÍCULA DE TARJETAS
+======================================== */
 
 .specialties-grid {
   position: relative;
@@ -239,6 +272,7 @@
 
   background-color: #FDFCF9;
   color: #002062;
+
   text-align: center;
   text-decoration: none;
 
@@ -253,27 +287,29 @@
 .specialty-card:hover {
   transform: translateY(-8px);
   border-color: #008C96;
+
   box-shadow: 0 18px 40px rgb(0 32 98 / 12%);
 }
 
 /* ========================================
-   ICONOS SIN FONDO
+   ICONOS TRANSPARENTES
 ======================================== */
 
-
-/* Contenedor del icono */
 .specialty-icon {
   position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
   width: 100%;
   height: 175px;
+
   isolation: isolate;
 }
 
-/* Forma decorativa detrás del icono */
+/* Forma decorativa turquesa */
+
 .specialty-icon::before {
   content: "";
   position: absolute;
@@ -283,15 +319,20 @@
   height: 135px;
 
   background-color: rgb(0 140 150 / 10%);
-  border-radius: 45% 55% 60% 40% / 50% 45% 55% 50%;
+
+  border-radius:
+    45% 55% 60% 40% /
+    50% 45% 55% 50%;
 
   transform: rotate(-12deg);
+
   transition:
     transform 0.4s ease,
     background-color 0.4s ease;
 }
 
-/* Imagen transparente */
+/* Imagen del icono */
+
 .specialty-icon img {
   position: relative;
   display: block;
@@ -301,10 +342,12 @@
   max-width: 100%;
 
   object-fit: contain;
+
   transition: transform 0.3s ease;
 }
 
-/* Animación al pasar el ratón */
+/* Animación del icono al pasar el ratón */
+
 .specialty-card:hover .specialty-icon img {
   transform: scale(1.06);
 }
@@ -314,29 +357,13 @@
   background-color: rgb(0 140 150 / 17%);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .specialty-icon img,
-  .specialty-icon::before {
-    transition: none;
-  }
-
-  .specialty-card:hover .specialty-icon img,
-  .specialty-card:hover .specialty-icon::before {
-    transform: none;
-  }
-}
-
-
-.specialty-card:hover .specialty-icon img {
-  transform: scale(1.06);
-}
-
 /* ========================================
    TEXTOS DE LAS TARJETAS
 ======================================== */
 
 .specialty-card h3 {
   margin: 0;
+
   color: #002062;
   font-family: Georgia, serif;
   font-size: 1.35rem;
@@ -347,6 +374,7 @@
 .specialty-card p {
   flex-grow: 1;
   margin: 0;
+
   color: #405674;
   font-size: 0.95rem;
   line-height: 1.7;
@@ -356,6 +384,7 @@
 
 .specialty-link {
   margin-top: auto;
+
   color: #007681;
   font-size: 0.95rem;
   font-weight: 600;
@@ -368,7 +397,7 @@
 }
 
 /* ========================================
-   BOTÓN INFERIOR
+   BOTÓN VER TODAS LAS ESPECIALIDADES
 ======================================== */
 
 .specialties-footer {
@@ -377,6 +406,7 @@
 
   display: flex;
   justify-content: center;
+
   margin-top: 3rem;
 }
 
@@ -405,11 +435,12 @@
 .specialties-all:hover {
   background-color: #008C96;
   color: #002062;
+
   transform: translateY(-3px);
 }
 
 /* ========================================
-   ANIMACIONES
+   ANIMACIONES DEL HERO
 ======================================== */
 
 @keyframes fadeInUp {
@@ -437,16 +468,70 @@
 }
 
 /* ========================================
-   TABLETS
+   ANIMACIONES AL HACER SCROLL
 ======================================== */
 
-@media (max-width: 1100px) {
-  .specialties-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+@media (prefers-reduced-motion: no-preference) {
+
+  /* Estado inicial de las tarjetas */
+
+  .specialties .specialty-card {
+    opacity: 0;
+    transform: translateY(55px);
+
+    transition:
+      opacity 0.85s ease,
+      transform 0.85s ease,
+      box-shadow 0.3s ease,
+      border-color 0.3s ease;
+  }
+
+  /* Cuando la sección entra en pantalla */
+
+  .specialties.is-visible .specialty-card {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Aparición escalonada */
+
+  .specialties .specialty-card:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+
+  .specialties .specialty-card:nth-child(2) {
+    transition-delay: 0.3s;
+  }
+
+  .specialties .specialty-card:nth-child(3) {
+    transition-delay: 0.5s;
+  }
+
+  .specialties .specialty-card:nth-child(4) {
+    transition-delay: 0.7s;
+  }
+
+  /* Hover después de aparecer */
+
+  .specialties.is-visible .specialty-card:hover {
+    transform: translateY(-8px);
   }
 }
 
+/* ========================================
+   RESPONSIVE - TABLETS
+======================================== */
+
+@media (max-width: 1100px) {
+
+  .specialties-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
 @media (max-width: 1000px) {
+
   .hero {
     gap: 3rem;
     padding: 4rem 6%;
@@ -455,16 +540,19 @@
   .hero-title {
     font-size: clamp(2.3rem, 4vw, 3.5rem);
   }
+
 }
 
 /* ========================================
-   MÓVILES
+   RESPONSIVE - MÓVILES
 ======================================== */
 
 @media (max-width: 768px) {
+
   .hero {
     grid-template-columns: 1fr;
     gap: 3rem;
+
     min-height: auto;
     padding: 3.5rem 6%;
   }
@@ -480,9 +568,11 @@
   .hero-image-container {
     max-width: 420px;
   }
+
 }
 
 @media (max-width: 650px) {
+
   .specialties {
     padding: 4rem 6%;
   }
@@ -499,9 +589,11 @@
     width: 170px;
     height: 170px;
   }
+
 }
 
 @media (max-width: 480px) {
+
   .hero {
     padding: 3rem 6%;
     gap: 2.5rem;
@@ -539,6 +631,7 @@
   .specialty-card {
     padding: 1.5rem;
   }
+
 }
 
 /* ========================================
@@ -546,15 +639,22 @@
 ======================================== */
 
 @media (prefers-reduced-motion: reduce) {
+
   .hero-content,
   .hero-image-container {
     animation: none;
+  }
+
+  .specialty-card {
+    opacity: 1;
+    transform: none;
   }
 
   .hero-button-primary,
   .hero-button-secondary,
   .specialty-card,
   .specialty-icon img,
+  .specialty-icon::before,
   .specialties-all {
     transition: none;
   }
@@ -562,8 +662,11 @@
   .hero-button-primary:hover,
   .hero-button-secondary:hover,
   .specialty-card:hover,
+  .specialties.is-visible .specialty-card:hover,
   .specialty-card:hover .specialty-icon img,
+  .specialty-card:hover .specialty-icon::before,
   .specialties-all:hover {
     transform: none;
   }
+
 }

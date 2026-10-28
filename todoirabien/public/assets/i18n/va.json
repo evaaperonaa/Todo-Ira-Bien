@@ -1,3 +1,4 @@
+
 {
   "NAV": {
     "HOME": "Inici",
@@ -19,6 +20,34 @@
     "HERO_APPOINTMENT": "Demanar cita",
     "HERO_HOW_I_WORK": "Com treballe",
     "HERO_NOTE": "Tu marques el ritme. Tu decideixes fins on arribar.",
-    "HERO_IMAGE_ALT": "Retrat del psicòleg a la seua consulta"
+    "HERO_IMAGE_ALT": "Retrat del psicòleg a la seua consulta",
+
+    "SPECIALTIES": {
+      "LABEL": "Les meues especialitats",
+      "TITLE": "En què puc ajudar-te?",
+      "DESCRIPTION": "Cada persona té la seua pròpia història i les seues pròpies necessitats. Descobreix les diferents àrees en què puc acompanyar-te.",
+      "DISCOVER": "Descobrir-ne més",
+      "VIEW_ALL": "Veure totes les especialitats",
+
+      "GENERAL": {
+        "TITLE": "Psicologia General Sanitària",
+        "DESCRIPTION": "Un espai per a comprendre les teues emocions, afrontar dificultats i trobar eines per al teu benestar."
+      },
+
+      "FORENSIC": {
+        "TITLE": "Psicologia Forense",
+        "DESCRIPTION": "Avaluació psicològica especialitzada en l'àmbit judicial, amb un enfocament professional i rigorós."
+      },
+
+      "SEX_COACHING": {
+        "TITLE": "Sex Coaching",
+        "DESCRIPTION": "Un acompanyament pròxim per a explorar la sexualitat, millorar la comunicació i treballar el benestar íntim."
+      },
+
+      "ORGANIZATIONS": {
+        "TITLE": "Psicologia del Treball i de les Organitzacions",
+        "DESCRIPTION": "Solucions per a millorar el benestar laboral, les relacions professionals i el desenvolupament d'equips."
+      }
+    }
   }
 }

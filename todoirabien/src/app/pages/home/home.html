@@ -1,8 +1,8 @@
 <main>
 
-    <!-- =================================== -->
-    <!-- HERO - PRESENTACIÓN PRINCIPAL -->
-    <!-- =================================== -->
+    <!-- ========================================
+       HERO - PRESENTACIÓN PRINCIPAL
+  ======================================== -->
 
     @for (key of [animationKey()]; track key) {
 
@@ -27,7 +27,7 @@
                 {{ 'HOME.HERO_DESCRIPTION' | translate }}
             </p>
 
-            <!-- Botones -->
+            <!-- Botones del hero -->
             <div class="hero-actions">
 
                 <a routerLink="/cita" class="hero-button-primary">
@@ -58,33 +58,33 @@
     }
 
 
-    <!-- =================================== -->
-    <!-- SECCIÓN DE ESPECIALIDADES -->
-    <!-- =================================== -->
+    <!-- ========================================
+       ESPECIALIDADES
+  ======================================== -->
+
+    @for (key of [animationKey()]; track key) {
 
     <section class="specialties" id="especialidades">
 
-        <!-- Encabezado -->
+        <!-- Encabezado de especialidades -->
         <div class="specialties-header">
 
             <span class="specialties-label">
-                Mis especialidades
+                {{ 'HOME.SPECIALTIES.LABEL' | translate }}
             </span>
 
             <h2 class="specialties-title">
-                ¿En qué puedo ayudarte?
+                {{ 'HOME.SPECIALTIES.TITLE' | translate }}
             </h2>
 
             <p class="specialties-description">
-                Cada persona tiene su propia historia y sus propias
-                necesidades. Descubre las diferentes áreas en las
-                que puedo acompañarte.
+                {{ 'HOME.SPECIALTIES.DESCRIPTION' | translate }}
             </p>
 
         </div>
 
 
-        <!-- Cuadrícula de especialidades -->
+        <!-- Cuadrícula de tarjetas -->
         <div class="specialties-grid">
 
             <!-- PSICOLOGÍA GENERAL SANITARIA -->
@@ -95,17 +95,16 @@
                 </div>
 
                 <h3>
-                    Psicología General Sanitaria
+                    {{ 'HOME.SPECIALTIES.GENERAL.TITLE' | translate }}
                 </h3>
 
                 <p>
-                    Un espacio para comprender tus emociones,
-                    afrontar dificultades y encontrar herramientas
-                    para tu bienestar.
+                    {{ 'HOME.SPECIALTIES.GENERAL.DESCRIPTION' | translate }}
                 </p>
 
                 <span class="specialty-link">
-                    Descubrir más →
+                    {{ 'HOME.SPECIALTIES.DISCOVER' | translate }}
+                    <span aria-hidden="true">→</span>
                 </span>
 
             </a>
@@ -119,17 +118,16 @@
                 </div>
 
                 <h3>
-                    Psicología Forense
+                    {{ 'HOME.SPECIALTIES.FORENSIC.TITLE' | translate }}
                 </h3>
 
                 <p>
-                    Evaluación psicológica especializada en
-                    el ámbito judicial, con un enfoque
-                    profesional y riguroso.
+                    {{ 'HOME.SPECIALTIES.FORENSIC.DESCRIPTION' | translate }}
                 </p>
 
                 <span class="specialty-link">
-                    Descubrir más →
+                    {{ 'HOME.SPECIALTIES.DISCOVER' | translate }}
+                    <span aria-hidden="true">→</span>
                 </span>
 
             </a>
@@ -143,23 +141,22 @@
                 </div>
 
                 <h3>
-                    Sex Coaching
+                    {{ 'HOME.SPECIALTIES.SEX_COACHING.TITLE' | translate }}
                 </h3>
 
                 <p>
-                    Un acompañamiento cercano para explorar
-                    la sexualidad, mejorar la comunicación
-                    y trabajar el bienestar íntimo.
+                    {{ 'HOME.SPECIALTIES.SEX_COACHING.DESCRIPTION' | translate }}
                 </p>
 
                 <span class="specialty-link">
-                    Descubrir más →
+                    {{ 'HOME.SPECIALTIES.DISCOVER' | translate }}
+                    <span aria-hidden="true">→</span>
                 </span>
 
             </a>
 
 
-            <!-- PSICOLOGÍA DE LAS ORGANIZACIONES -->
+            <!-- PSICOLOGÍA DEL TRABAJO Y ORGANIZACIONES -->
             <a routerLink="/psico-organizaciones" class="specialty-card">
 
                 <div class="specialty-icon">
@@ -167,17 +164,16 @@
                 </div>
 
                 <h3>
-                    Psicología del Trabajo y de las Organizaciones
+                    {{ 'HOME.SPECIALTIES.ORGANIZATIONS.TITLE' | translate }}
                 </h3>
 
                 <p>
-                    Soluciones para mejorar el bienestar laboral,
-                    las relaciones profesionales y el
-                    desarrollo de equipos.
+                    {{ 'HOME.SPECIALTIES.ORGANIZATIONS.DESCRIPTION' | translate }}
                 </p>
 
                 <span class="specialty-link">
-                    Descubrir más →
+                    {{ 'HOME.SPECIALTIES.DISCOVER' | translate }}
+                    <span aria-hidden="true">→</span>
                 </span>
 
             </a>
@@ -189,12 +185,14 @@
         <div class="specialties-footer">
 
             <a routerLink="/especialidades" class="specialties-all">
-                Ver todas las especialidades
+                {{ 'HOME.SPECIALTIES.VIEW_ALL' | translate }}
                 <span aria-hidden="true">→</span>
             </a>
 
         </div>
 
     </section>
+
+    }
 
 </main>
