@@ -260,29 +260,72 @@
    ICONOS SIN FONDO
 ======================================== */
 
+
+/* Contenedor del icono */
 .specialty-icon {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 
   width: 100%;
   height: 175px;
-  overflow: visible;
-
-  border-radius: 14px;
-  background-color: transparent;
+  isolation: isolate;
 }
 
+/* Forma decorativa detrás del icono */
+.specialty-icon::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+
+  width: 150px;
+  height: 135px;
+
+  background-color: rgb(0 140 150 / 10%);
+  border-radius: 45% 55% 60% 40% / 50% 45% 55% 50%;
+
+  transform: rotate(-12deg);
+  transition:
+    transform 0.4s ease,
+    background-color 0.4s ease;
+}
+
+/* Imagen transparente */
 .specialty-icon img {
+  position: relative;
   display: block;
+
   width: 160px;
   height: 160px;
   max-width: 100%;
 
   object-fit: contain;
-
   transition: transform 0.3s ease;
 }
+
+/* Animación al pasar el ratón */
+.specialty-card:hover .specialty-icon img {
+  transform: scale(1.06);
+}
+
+.specialty-card:hover .specialty-icon::before {
+  transform: rotate(5deg) scale(1.08);
+  background-color: rgb(0 140 150 / 17%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .specialty-icon img,
+  .specialty-icon::before {
+    transition: none;
+  }
+
+  .specialty-card:hover .specialty-icon img,
+  .specialty-card:hover .specialty-icon::before {
+    transform: none;
+  }
+}
+
 
 .specialty-card:hover .specialty-icon img {
   transform: scale(1.06);
