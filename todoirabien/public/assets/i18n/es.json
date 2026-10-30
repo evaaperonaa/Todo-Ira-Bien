@@ -1,7 +1,7 @@
 {
   "NAV": {
     "HOME": "Inicio",
-    "SPECIALTIES": "Especialidades",
+    "SPECIALTIES": "Áreas de trabajo",
     "HOW_I_WORK": "Cómo trabajo",
     "APPOINTMENT": "Pedir cita"
   },
@@ -21,11 +21,11 @@
     "HERO_NOTE": "Tú marcas el ritmo. Tú decides hasta dónde llegar.",
     "HERO_IMAGE_ALT": "Retrato del psicólogo en su consulta",
     "SPECIALTIES": {
-      "LABEL": "Mis especialidades",
+      "LABEL": "Mis áreas de trabajo",
       "TITLE": "¿En qué puedo ayudarte?",
       "DESCRIPTION": "Cada persona tiene su propia historia y sus propias necesidades. Descubre las diferentes áreas en las que puedo acompañarte.",
       "DISCOVER": "Descubrir más",
-      "VIEW_ALL": "Ver todas las especialidades",
+      "VIEW_ALL": "Ver todas las áreas de trabajo",
       "GENERAL": {
         "TITLE": "Psicología General Sanitaria",
         "DESCRIPTION": "Un espacio para comprender tus emociones, afrontar dificultades y encontrar herramientas para tu bienestar."

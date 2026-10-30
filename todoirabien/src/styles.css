@@ -53,3 +53,25 @@ p,
   line-height: 1.7;
 }
 
+
+/* ========================================
+   ESTILOS GLOBALES
+======================================== */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}

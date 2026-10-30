@@ -1,19 +1,26 @@
 <header class="header">
 
-  <a class="brand" routerLink="/" aria-label="Ir a inicio">
-    <img src="/logo.png" alt="Logo de la consulta" class="brand-logo">
+  <!-- LOGO -->
 
-    <span class="brand-text">
-      <span class="brand-name">Pepe Almeria Serrano</span>
+  <!-- LOGOTIPOS -->
+  <div class="brand-group">
 
-      <span class="brand-description">
-        {{ 'FOOTER.TAGLINE' | translate }}
-      </span>
-    </span>
-  </a>
+    <!-- Logo original, a la izquierda -->
+    <a class="brand" routerLink="/" aria-label="Ir a inicio">
+      <img src="/logo.png" alt="Logo de la consulta" class="brand-logo brand-logo-original">
+    </a>
+
+    <!-- Logo Todo Irá Bien, a la derecha -->
+    <a class="brand" routerLink="/" aria-label="Ir a inicio">
+      <img src="/todoirabien.png" alt="Todo Irá Bien" class="brand-logo brand-logo-todo">
+    </a>
+
+  </div>
 
 
+  <!-- NAVEGACIÓN -->
   <nav class="navigation" aria-label="Navegación principal">
+
     <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
       {{ 'NAV.HOME' | translate }}
     </a>
@@ -25,18 +32,26 @@
     <a routerLink="/como-trabajo" routerLinkActive="active">
       {{ 'NAV.HOW_I_WORK' | translate }}
     </a>
+
   </nav>
 
+  <!-- ACCIONES -->
   <div class="header-actions">
-    <!-- Selector de idioma -->
+
+    <!-- SELECTOR DE IDIOMA -->
     <div class="language-selector">
+
       <button type="button" class="language-button" (click)="alternarMenuIdiomas()"
         [attr.aria-expanded]="menuIdiomasAbierto" aria-label="Cambiar idioma">
+
         @if (idiomaActual === 'es') {
+
         <span class="flag flag-spain" aria-hidden="true"></span>
 
         <span class="language-code">ES</span>
+
         } @else {
+
         <span class="flag flag-valencia" aria-hidden="true">
           <span class="blue-stripe"></span>
           <span class="yellow-stripe"></span>
@@ -44,21 +59,28 @@
         </span>
 
         <span class="language-code">VA</span>
+
         }
 
       </button>
 
+      <!-- MENÚ DE IDIOMAS -->
       @if (menuIdiomasAbierto) {
+
       <div class="language-menu">
-        <!-- Castellano -->
+
+        <!-- CASTELLANO -->
         <button type="button" (click)="cambiarIdioma('es')" [class.selected]="idiomaActual === 'es'">
+
           <span class="flag flag-spain" aria-hidden="true"></span>
 
           <span>Castellano</span>
+
         </button>
 
-        <!-- Valenciano -->
+        <!-- VALENCIANO -->
         <button type="button" (click)="cambiarIdioma('va')" [class.selected]="idiomaActual === 'va'">
+
           <span class="flag flag-valencia" aria-hidden="true">
             <span class="blue-stripe"></span>
             <span class="yellow-stripe"></span>
@@ -66,14 +88,20 @@
           </span>
 
           <span>Valencià</span>
+
         </button>
+
       </div>
+
       }
+
     </div>
 
-    <!-- Botón de cita -->
+    <!-- BOTÓN PEDIR CITA -->
     <a class="appointment-button" routerLink="/cita">
       {{ 'NAV.APPOINTMENT' | translate }}
     </a>
+
   </div>
+
 </header>

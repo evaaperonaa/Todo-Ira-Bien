@@ -1,7 +1,7 @@
 {
   "NAV": {
     "HOME": "Inici",
-    "SPECIALTIES": "Especialitats",
+    "SPECIALTIES": "Àrees de treball",
     "HOW_I_WORK": "Com treballe",
     "APPOINTMENT": "Demanar cita"
   },
@@ -21,11 +21,11 @@
     "HERO_NOTE": "Tu marques el ritme. Tu decideixes fins on arribar.",
     "HERO_IMAGE_ALT": "Retrat del psicòleg a la seua consulta",
     "SPECIALTIES": {
-      "LABEL": "Les meues especialitats",
+      "LABEL": "Les meues àrees de treball",
       "TITLE": "En què puc ajudar-te?",
       "DESCRIPTION": "Cada persona té la seua pròpia història i les seues pròpies necessitats. Descobreix les diferents àrees en què puc acompanyar-te.",
       "DISCOVER": "Descobrir-ne més",
-      "VIEW_ALL": "Veure totes les especialitats",
+      "VIEW_ALL": "Veure totes les àrees de treball",
       "GENERAL": {
         "TITLE": "Psicologia General Sanitària",
         "DESCRIPTION": "Un espai per a comprendre les teues emocions, afrontar dificultats i trobar eines per al teu benestar."

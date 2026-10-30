@@ -1,58 +1,112 @@
-
 :host {
   display: block;
 }
 
-/* Header */
+/* ========================================
+   HEADER
+======================================== */
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  padding: 1.25rem 6%;
+
+  padding: 0.8rem 6%;
+
   background-color: #F8F7F2;
   color: #002062;
 }
 
-/* Logo y nombre */
-.brand {
+
+/* ========================================
+   LOGOTIPOS DEL HEADER
+======================================== */
+
+.brand-group {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  gap: 0.85rem;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  color: inherit;
   flex-shrink: 0;
 }
 
 .brand-logo {
   display: block;
-  width: 65px;
-  height: 65px;
+  width: auto;
   object-fit: contain;
-  flex-shrink: 0;
 }
 
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+/* Logo original, a la izquierda */
+.brand-logo-original {
+  height: 65px;
+  max-width: 80px;
 }
 
-.brand-name {
-  font-family: Georgia, serif;
-  font-size: 1.5rem;
+/* Logo Todo Irá Bien, a la derecha */
+.brand-logo-todo {
+  height: 80px;
+  max-width: 200px;
 }
 
-.brand-description {
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #002062;
-  opacity: 0.8;
+/* Tablets */
+@media (max-width: 1050px) {
+  .brand-group {
+    gap: 0.75rem;
+  }
+
+  .brand-logo-original {
+    height: 55px;
+    max-width: 65px;
+  }
+
+  .brand-logo-todo {
+    height: 65px;
+    max-width: 160px;
+  }
 }
 
-/* Navegación */
+/* Móviles */
+@media (max-width: 480px) {
+  .brand-group {
+    gap: 0.5rem;
+  }
+
+  .brand-logo-original {
+    height: 42px;
+    max-width: 45px;
+  }
+
+  .brand-logo-todo {
+    height: 50px;
+    max-width: 105px;
+  }
+}
+
+@media (max-width: 360px) {
+  .brand-logo-original {
+    height: 35px;
+    max-width: 38px;
+  }
+
+  .brand-logo-todo {
+    height: 42px;
+    max-width: 85px;
+  }
+}
+
+
+/* ========================================
+   NAVEGACIÓN
+======================================== */
+
 .navigation {
   display: flex;
   align-items: center;
@@ -63,6 +117,7 @@
   color: #002062;
   text-decoration: none;
   font-size: 0.95rem;
+
   transition: color 0.2s ease;
 }
 
@@ -71,16 +126,36 @@
   color: #008C96;
 }
 
-/* Botón para pedir cita */
+/* ========================================
+   ACCIONES DEL HEADER
+======================================== */
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ========================================
+   BOTÓN PEDIR CITA
+======================================== */
+
 .appointment-button {
   padding: 0.8rem 1.2rem;
+
   border: 2px solid #002062;
   border-radius: 6px;
+
   background-color: #002062;
   color: #FFFFFF;
+
   text-decoration: none;
   white-space: nowrap;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .appointment-button:hover {
@@ -89,14 +164,10 @@
   color: #002062;
 }
 
-/* Acciones del header */
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
+/* ========================================
+   SELECTOR DE IDIOMA
+======================================== */
 
-/* Selector de idioma */
 .language-selector {
   position: relative;
 }
@@ -105,13 +176,18 @@
   display: flex;
   align-items: center;
   gap: 0.4rem;
+
   padding: 0.45rem 0.6rem;
+
   border: 1px solid rgb(0 140 150 / 45%);
   border-radius: 6px;
+
   background: transparent;
   color: #002062;
+
   cursor: pointer;
   font-size: 0.85rem;
+
   transition: background-color 0.2s ease;
 }
 
@@ -124,17 +200,26 @@
   font-weight: 600;
 }
 
-/* Menú desplegable */
+/* ========================================
+   MENÚ DESPLEGABLE
+======================================== */
+
 .language-menu {
   position: absolute;
+
   top: calc(100% + 0.5rem);
   right: 0;
+
   z-index: 100;
+
   min-width: 175px;
   padding: 0.35rem;
+
   border: 1px solid rgb(0 140 150 / 30%);
   border-radius: 8px;
+
   background-color: #FFFFFF;
+
   box-shadow: 0 8px 24px rgb(0 32 98 / 12%);
 }
 
@@ -142,12 +227,16 @@
   display: flex;
   align-items: center;
   gap: 0.65rem;
+
   width: 100%;
   padding: 0.7rem;
+
   border: none;
   border-radius: 5px;
+
   background: transparent;
   color: #002062;
+
   text-align: left;
   cursor: pointer;
 }
@@ -157,29 +246,38 @@
   background-color: rgb(0 140 150 / 12%);
 }
 
-/* Banderas */
+/* ========================================
+   BANDERAS
+======================================== */
+
 .flag {
   display: inline-flex;
+
   width: 26px;
   height: 17px;
+
   flex-shrink: 0;
   overflow: hidden;
+
   border: 1px solid rgb(0 0 0 / 12%);
   border-radius: 2px;
+
   box-sizing: border-box;
 }
 
+/* Bandera de España */
+
 .flag-spain {
-  background: linear-gradient(
-    to bottom,
-    #AA151B 0%,
-    #AA151B 25%,
-    #F1BF00 25%,
-    #F1BF00 75%,
-    #AA151B 75%,
-    #AA151B 100%
-  );
+  background: linear-gradient(to bottom,
+      #AA151B 0%,
+      #AA151B 25%,
+      #F1BF00 25%,
+      #F1BF00 75%,
+      #AA151B 75%,
+      #AA151B 100%);
 }
+
+/* Bandera de Valencia */
 
 .flag-valencia .blue-stripe {
   width: 25%;
@@ -193,20 +291,45 @@
 
 .flag-valencia .red-stripes {
   flex: 1;
-  background: repeating-linear-gradient(
-    to bottom,
-    #D62828 0,
-    #D62828 2px,
-    #F4CC37 2px,
-    #F4CC37 4px
-  );
+
+  background: repeating-linear-gradient(to bottom,
+      #D62828 0,
+      #D62828 2px,
+      #F4CC37 2px,
+      #F4CC37 4px);
 }
 
-/* Tablets */
+/* ========================================
+   TABLETS
+======================================== */
+
+@media (max-width: 1050px) {
+
+  .header {
+    gap: 1.25rem;
+  }
+
+  .brand-logo {
+    max-width: 190px;
+    height: 70px;
+  }
+
+  .navigation {
+    gap: 1rem;
+  }
+
+}
+
 @media (max-width: 850px) {
+
   .header {
     flex-wrap: wrap;
     gap: 1rem;
+  }
+
+  .brand-logo {
+    max-width: 200px;
+    height: 65px;
   }
 
   .navigation {
@@ -219,25 +342,23 @@
   .header-actions {
     margin-left: auto;
   }
+
 }
 
-/* Móviles */
+/* ========================================
+   MÓVILES
+======================================== */
+
 @media (max-width: 480px) {
+
   .header {
     padding: 1rem 5%;
+    gap: 0.75rem;
   }
 
   .brand-logo {
-    width: 48px;
-    height: 48px;
-  }
-
-  .brand-name {
-    font-size: 1.2rem;
-  }
-
-  .brand-description {
-    font-size: 0.6rem;
+    max-width: 135px;
+    height: 55px;
   }
 
   .header-actions {
@@ -249,7 +370,26 @@
     font-size: 0.85rem;
   }
 
+  .navigation {
+    gap: 0.85rem;
+  }
+
   .navigation a {
     font-size: 0.85rem;
   }
+
+}
+
+@media (max-width: 360px) {
+
+  .brand-logo {
+    max-width: 110px;
+    height: 45px;
+  }
+
+  .appointment-button {
+    padding: 0.55rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
 }
