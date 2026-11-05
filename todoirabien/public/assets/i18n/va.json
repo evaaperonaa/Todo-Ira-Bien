@@ -51,6 +51,16 @@
       "BUTTON": "Descobreix com treballe",
       "VIDEO_LABEL": "Vídeo de presentació del psicòleg",
       "VIDEO_FALLBACK": "El teu navegador no permet reproduir aquest vídeo."
+    },
+    "SESSIONS": {
+      "IN_PERSON": {
+        "TITLE": "Sessions presencials",
+        "DESCRIPTION": "Un espai pròxim i acollidor."
+      },
+      "ONLINE": {
+        "TITLE": "Sessions en línia",
+        "DESCRIPTION": "Des d'on et trobes."
+      }
     }
   }
 }

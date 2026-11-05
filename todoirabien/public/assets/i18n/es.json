@@ -51,6 +51,16 @@
       "BUTTON": "Descubre cómo trabajo",
       "VIDEO_LABEL": "Vídeo de presentación del psicólogo",
       "VIDEO_FALLBACK": "Tu navegador no permite reproducir este vídeo."
+    },
+    "SESSIONS": {
+      "IN_PERSON": {
+        "TITLE": "Sesiones presenciales",
+        "DESCRIPTION": "Un espacio cercano y acogedor."
+      },
+      "ONLINE": {
+        "TITLE": "Sesiones online",
+        "DESCRIPTION": "Desde donde te encuentres."
+      }
     }
   }
 }

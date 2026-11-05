@@ -19,7 +19,7 @@ export const routes: Routes = [
     component: ComoTrabajo
   },
   {
-    path: 'especialidades',
+    path: 'areas-de-trabajo',
     component: Especialidades
   },
   {
