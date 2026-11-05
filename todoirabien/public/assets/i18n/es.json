@@ -62,5 +62,45 @@
         "DESCRIPTION": "Desde donde te encuentres."
       }
     }
+  },
+  "HOW_WORK": {
+    "HERO": {
+      "LABEL": "MI FORMA DE TRABAJAR",
+      "TITLE": "Un espacio para escucharte",
+      "HIGHLIGHT": "y acompañarte",
+      "DESCRIPTION": "Cada persona tiene su propia historia, sus necesidades y su ritmo. La terapia es un espacio para explorar lo que te preocupa y encontrar nuevas formas de avanzar."
+    },
+    "PRESENTATION": {
+      "LABEL": "CONÓCEME",
+      "TITLE": "Mucho más que una consulta",
+      "DESCRIPTION": "Soy Pepe Almeria Serrano, psicólogo y psicoterapeuta. Creo en la importancia de crear un espacio de confianza donde puedas expresarte con libertad y sentirte escuchado.",
+      "DESCRIPTION_SECOND": "En este vídeo puedes conocerme un poco mejor y descubrir cómo entiendo el acompañamiento psicológico.",
+      "PROFESSION": "Psicólogo y psicoterapeuta",
+      "VIDEO_LABEL": "Vídeo de presentación del psicólogo",
+      "VIDEO_FALLBACK": "Tu navegador no admite la reproducción de vídeo."
+    },
+    "PROCESS": {
+      "LABEL": "EL PROCESO",
+      "TITLE": "¿Cómo será tu proceso?",
+      "DESCRIPTION": "Cada proceso es único, pero estos son algunos de los pasos habituales para comenzar.",
+      "STEP_ONE": {
+        "TITLE": "Primer contacto",
+        "DESCRIPTION": "Podrás ponerte en contacto para consultar disponibilidad y resolver las primeras dudas sobre las sesiones."
+      },
+      "STEP_TWO": {
+        "TITLE": "Primera sesión",
+        "DESCRIPTION": "Un primer encuentro para hablar de lo que te trae a consulta, conocernos y explorar qué necesitas."
+      },
+      "STEP_THREE": {
+        "TITLE": "Acompañamiento",
+        "DESCRIPTION": "A partir de ahí, se irá construyendo un proceso adaptado a tus necesidades y objetivos."
+      }
+    },
+    "CTA": {
+      "LABEL": "DA EL PRIMER PASO",
+      "TITLE": "¿Empezamos?",
+      "DESCRIPTION": "Puedes solicitar una cita presencial u online y dar el primer paso hacia tu bienestar.",
+      "BUTTON": "Pedir cita"
+    }
   }
 }

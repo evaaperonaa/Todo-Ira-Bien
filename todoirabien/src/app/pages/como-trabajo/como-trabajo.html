@@ -1,1 +1,141 @@
-<p>como-trabajo works!</p>
+
+<main class="how-page">
+
+  <!-- HERO -->
+  <section class="how-hero">
+    <div class="how-hero-content">
+      <span class="section-label">
+        {{ 'HOW_WORK.HERO.LABEL' | translate }}
+      </span>
+
+      <h1>
+        {{ 'HOW_WORK.HERO.TITLE' | translate }}
+        <span>{{ 'HOW_WORK.HERO.HIGHLIGHT' | translate }}</span>
+      </h1>
+
+      <p>{{ 'HOW_WORK.HERO.DESCRIPTION' | translate }}</p>
+    </div>
+  </section>
+
+  <!-- PRESENTACIÓN Y VÍDEO -->
+  <section class="presentation-section">
+    <div class="presentation-container">
+
+      <div class="presentation-video-wrapper">
+        <video
+          class="presentation-video"
+          controls
+          preload="none"
+          poster="/psicologo.jpg"
+          playsinline
+          [attr.aria-label]="'HOW_WORK.PRESENTATION.VIDEO_LABEL' | translate"
+        >
+          <source src="/videos/presentacion.mp4" type="video/mp4">
+          {{ 'HOW_WORK.PRESENTATION.VIDEO_FALLBACK' | translate }}
+        </video>
+      </div>
+
+      <div class="presentation-content">
+        <span class="section-label">
+          {{ 'HOW_WORK.PRESENTATION.LABEL' | translate }}
+        </span>
+
+        <h2>{{ 'HOW_WORK.PRESENTATION.TITLE' | translate }}</h2>
+
+        <p>{{ 'HOW_WORK.PRESENTATION.DESCRIPTION' | translate }}</p>
+
+        <p>{{ 'HOW_WORK.PRESENTATION.DESCRIPTION_SECOND' | translate }}</p>
+
+        <div class="professional-info">
+          <strong>Pepe Almeria Serrano</strong>
+          <span>{{ 'HOW_WORK.PRESENTATION.PROFESSION' | translate }}</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="process-section">
+
+    <div class="section-heading">
+      <span class="section-label">
+        {{ 'HOW_WORK.PROCESS.LABEL' | translate }}
+      </span>
+
+      <h2>{{ 'HOW_WORK.PROCESS.TITLE' | translate }}</h2>
+
+      <p>{{ 'HOW_WORK.PROCESS.DESCRIPTION' | translate }}</p>
+    </div>
+
+    <div class="process-grid">
+
+      <article class="process-card">
+        <span class="process-number">01</span>
+        <div class="process-icon">
+          <svg viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true">
+            <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8A8.5 8.5 0 0 1 12.5 20a8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7A8.4 8.4 0 0 1 4 11.5 8.5 8.5 0 0 1 12.5 3H13a8.5 8.5 0 0 1 8 8v.5Z"/>
+          </svg>
+        </div>
+
+        <h3>{{ 'HOW_WORK.PROCESS.STEP_ONE.TITLE' | translate }}</h3>
+        <p>{{ 'HOW_WORK.PROCESS.STEP_ONE.DESCRIPTION' | translate }}</p>
+      </article>
+
+      <article class="process-card">
+        <span class="process-number">02</span>
+        <div class="process-icon">
+          <svg viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true">
+            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>
+          </svg>
+        </div>
+
+        <h3>{{ 'HOW_WORK.PROCESS.STEP_TWO.TITLE' | translate }}</h3>
+        <p>{{ 'HOW_WORK.PROCESS.STEP_TWO.DESCRIPTION' | translate }}</p>
+      </article>
+
+      <article class="process-card">
+        <span class="process-number">03</span>
+        <div class="process-icon">
+          <svg viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true">
+            <path d="M12 22v-9"/>
+            <path d="M12 13C7 13 4 10 4 5c5 0 8 3 8 8Z"/>
+            <path d="M12 17c0-5 3-8 8-8 0 5-3 8-8 8Z"/>
+          </svg>
+        </div>
+
+        <h3>{{ 'HOW_WORK.PROCESS.STEP_THREE.TITLE' | translate }}</h3>
+        <p>{{ 'HOW_WORK.PROCESS.STEP_THREE.DESCRIPTION' | translate }}</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="how-cta">
+    <div class="how-cta-content">
+      <span class="section-label">
+        {{ 'HOW_WORK.CTA.LABEL' | translate }}
+      </span>
+
+      <h2>{{ 'HOW_WORK.CTA.TITLE' | translate }}</h2>
+
+      <p>{{ 'HOW_WORK.CTA.DESCRIPTION' | translate }}</p>
+
+      <a routerLink="/cita" class="cta-button">
+        {{ 'HOW_WORK.CTA.BUTTON' | translate }}
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+</main>

@@ -62,5 +62,45 @@
         "DESCRIPTION": "Des d'on et trobes."
       }
     }
+  },
+  "HOW_WORK": {
+    "HERO": {
+      "LABEL": "LA MEUA MANERA DE TREBALLAR",
+      "TITLE": "Un espai per a escoltar-te",
+      "HIGHLIGHT": "i acompanyar-te",
+      "DESCRIPTION": "Cada persona té la seua pròpia història, les seues necessitats i el seu ritme. La teràpia és un espai per a explorar allò que et preocupa i trobar noves maneres d'avançar."
+    },
+    "PRESENTATION": {
+      "LABEL": "CONEIX-ME",
+      "TITLE": "Molt més que una consulta",
+      "DESCRIPTION": "Soc Pepe Almeria Serrano, psicòleg i psicoterapeuta. Crec en la importància de crear un espai de confiança on pugues expressar-te amb llibertat i sentir-te escoltat.",
+      "DESCRIPTION_SECOND": "En este vídeo pots conéixer-me un poc millor i descobrir com entenc l'acompanyament psicològic.",
+      "PROFESSION": "Psicòleg i psicoterapeuta",
+      "VIDEO_LABEL": "Vídeo de presentació del psicòleg",
+      "VIDEO_FALLBACK": "El teu navegador no admet la reproducció de vídeo."
+    },
+    "PROCESS": {
+      "LABEL": "EL PROCÉS",
+      "TITLE": "Com serà el teu procés?",
+      "DESCRIPTION": "Cada procés és únic, però estos són alguns dels passos habituals per a començar.",
+      "STEP_ONE": {
+        "TITLE": "Primer contacte",
+        "DESCRIPTION": "Podràs posar-te en contacte per a consultar la disponibilitat i resoldre els primers dubtes sobre les sessions."
+      },
+      "STEP_TWO": {
+        "TITLE": "Primera sessió",
+        "DESCRIPTION": "Una primera trobada per a parlar del que et porta a consulta, conéixer-nos i explorar què necessites."
+      },
+      "STEP_THREE": {
+        "TITLE": "Acompanyament",
+        "DESCRIPTION": "A partir d'ací, s'anirà construint un procés adaptat a les teues necessitats i objectius."
+      }
+    },
+    "CTA": {
+      "LABEL": "FES EL PRIMER PAS",
+      "TITLE": "Comencem?",
+      "DESCRIPTION": "Pots sol·licitar una cita presencial o en línia i fer el primer pas cap al teu benestar.",
+      "BUTTON": "Demanar cita"
+    }
   }
 }
