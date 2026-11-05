@@ -102,5 +102,96 @@
       "DESCRIPTION": "Puedes solicitar una cita presencial u online y dar el primer paso hacia tu bienestar.",
       "BUTTON": "Pedir cita"
     }
+  },
+  "AREAS": {
+    "HERO": {
+      "LABEL": "ÁREAS DE TRABAJO",
+      "TITLE": "Un acompañamiento",
+      "HIGHLIGHT": "para cada necesidad",
+      "DESCRIPTION": "Conoce las diferentes áreas de trabajo y descubre cuál puede ajustarse mejor a lo que estás buscando."
+    },
+    "DISCOVER": "Descubrir especialidad",
+    "GENERAL": {
+      "LABEL": "BIENESTAR EMOCIONAL",
+      "TITLE": "Psicología general",
+      "DESCRIPTION": "Un espacio de acompañamiento psicológico para abordar dificultades emocionales, situaciones personales y cuestiones relacionadas con el bienestar."
+    },
+    "FORENSIC": {
+      "LABEL": "ÁMBITO JURÍDICO",
+      "TITLE": "Psicología forense",
+      "DESCRIPTION": "Evaluación psicológica especializada en contextos jurídicos, con atención a las necesidades de cada caso."
+    },
+    "SEX_COACHING": {
+      "LABEL": "SEXUALIDAD Y RELACIONES",
+      "TITLE": "Sex Coaching",
+      "DESCRIPTION": "Un espacio de orientación y acompañamiento para explorar cuestiones relacionadas con la sexualidad, la intimidad y las relaciones."
+    },
+    "ORGANIZATIONS": {
+      "LABEL": "ENTORNO PROFESIONAL",
+      "TITLE": "Psicología de las organizaciones",
+      "DESCRIPTION": "Una perspectiva psicológica orientada al bienestar laboral, las relaciones profesionales y el desarrollo de las organizaciones."
+    },
+    "CTA": {
+      "LABEL": "ESTAMOS AQUÍ PARA AYUDARTE",
+      "TITLE": "¿No sabes por dónde empezar?",
+      "DESCRIPTION": "Puedes ponerte en contacto para resolver tus dudas y consultar qué tipo de atención puede ajustarse a tus necesidades.",
+      "BUTTON": "Pedir cita"
+    }
+  },
+  "BOOKING": {
+    "HERO": {
+      "LABEL": "RESERVA TU SESIÓN",
+      "TITLE": "El primer paso",
+      "HIGHLIGHT": "empieza aquí",
+      "DESCRIPTION": "Elige cómo prefieres realizar tu sesión y encuentra el momento que mejor se adapte a ti."
+    },
+    "FORM": {
+      "LABEL": "PEDIR CITA",
+      "TITLE": "Solicita tu primera cita",
+      "DESCRIPTION": "Selecciona la modalidad, el área de consulta y el horario que prefieras."
+    },
+    "MODE": {
+      "TITLE": "Modalidad de la sesión",
+      "DESCRIPTION": "¿Cómo prefieres realizar tu consulta?",
+      "IN_PERSON": "Presencial",
+      "ONLINE": "Online"
+    },
+    "SPECIALTY": {
+      "TITLE": "Motivo de la consulta",
+      "DESCRIPTION": "Selecciona el área de trabajo.",
+      "PLACEHOLDER": "Selecciona una especialidad"
+    },
+    "DATE": {
+      "TITLE": "Fecha y horario",
+      "DESCRIPTION": "Selecciona un día en el calendario.",
+      "PREVIOUS": "Mes anterior",
+      "NEXT": "Mes siguiente",
+      "AVAILABLE": "Día disponible",
+      "SELECTED": "Día seleccionado"
+    },
+    "TIME": {
+      "TITLE": "Selecciona una hora",
+      "PLACEHOLDER": "Selecciona primero un día del calendario."
+    },
+    "DETAILS": {
+      "TITLE": "Tus datos",
+      "DESCRIPTION": "Información de contacto para gestionar tu cita.",
+      "NAME": "Nombre y apellidos",
+      "EMAIL": "Correo electrónico",
+      "PHONE": "Teléfono (opcional)",
+      "PRIVACY": "He leído y acepto la política de privacidad.",
+      "BUTTON": "Confirmar cita"
+    },
+    "SUMMARY": {
+      "TITLE": "Resumen de tu cita",
+      "MODE": "Modalidad",
+      "DATE": "Fecha",
+      "TIME": "Hora"
+    },
+    "PRIVACY": {
+      "TITLE": "Tu privacidad es importante",
+      "DESCRIPTION": "Los datos que facilites se utilizarán para gestionar tu solicitud de cita, de acuerdo con la política de privacidad. No es necesario incluir información clínica en este formulario."
+    },
+    "DEMO": "Calendario de demostración. Los horarios mostrados no representan disponibilidad real y las reservas todavía no están habilitadas."
   }
 }

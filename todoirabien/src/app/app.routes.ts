@@ -39,6 +39,11 @@ export const routes: Routes = [
     component: PsicoOrganizaciones
   },
   {
+  path: 'cita',
+  loadComponent: () =>
+    import('./pages/cita/cita').then(m => m.Cita)
+},
+  {
     path: '**',
     redirectTo: ''
   }

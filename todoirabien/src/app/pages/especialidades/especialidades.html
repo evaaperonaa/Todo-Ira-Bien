@@ -1,1 +1,124 @@
-<p>especialidades works!</p>
+
+<main class="areas-page">
+
+  <!-- HERO -->
+  <section class="areas-hero">
+    <div class="areas-hero-content">
+      <span class="section-label">
+        {{ 'AREAS.HERO.LABEL' | translate }}
+      </span>
+
+      <h1>
+        {{ 'AREAS.HERO.TITLE' | translate }}
+        <span>{{ 'AREAS.HERO.HIGHLIGHT' | translate }}</span>
+      </h1>
+
+      <p>{{ 'AREAS.HERO.DESCRIPTION' | translate }}</p>
+    </div>
+  </section>
+
+  <!-- ÁREAS DE TRABAJO -->
+  <section class="areas-section">
+    <div class="areas-container">
+
+      <article class="area-card">
+        <div class="area-image area-image-general">
+          <img src="/iconos/general-icon.png" alt="" loading="lazy">
+        </div>
+
+        <div class="area-content">
+          <span class="area-category">
+            {{ 'AREAS.GENERAL.LABEL' | translate }}
+          </span>
+
+          <h2>{{ 'AREAS.GENERAL.TITLE' | translate }}</h2>
+          <p>{{ 'AREAS.GENERAL.DESCRIPTION' | translate }}</p>
+
+          <a routerLink="/psico-general" class="area-link">
+            {{ 'AREAS.DISCOVER' | translate }}
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="area-card">
+        <div class="area-image area-image-forensic">
+          <img src="/iconos/forense-icon.png" alt="" loading="lazy">
+        </div>
+
+        <div class="area-content">
+          <span class="area-category">
+            {{ 'AREAS.FORENSIC.LABEL' | translate }}
+          </span>
+
+          <h2>{{ 'AREAS.FORENSIC.TITLE' | translate }}</h2>
+          <p>{{ 'AREAS.FORENSIC.DESCRIPTION' | translate }}</p>
+
+          <a routerLink="/psico-forense" class="area-link">
+            {{ 'AREAS.DISCOVER' | translate }}
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="area-card">
+        <div class="area-image area-image-sex">
+          <img src="/iconos/sex-coaching-icon.png" alt="" loading="lazy">
+        </div>
+
+        <div class="area-content">
+          <span class="area-category">
+            {{ 'AREAS.SEX_COACHING.LABEL' | translate }}
+          </span>
+
+          <h2>{{ 'AREAS.SEX_COACHING.TITLE' | translate }}</h2>
+          <p>{{ 'AREAS.SEX_COACHING.DESCRIPTION' | translate }}</p>
+
+          <a routerLink="/sex-coaching" class="area-link">
+            {{ 'AREAS.DISCOVER' | translate }}
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="area-card">
+        <div class="area-image area-image-organizations">
+          <img src="/iconos/organizaciones-icon.png" alt="" loading="lazy">
+        </div>
+
+        <div class="area-content">
+          <span class="area-category">
+            {{ 'AREAS.ORGANIZATIONS.LABEL' | translate }}
+          </span>
+
+          <h2>{{ 'AREAS.ORGANIZATIONS.TITLE' | translate }}</h2>
+          <p>{{ 'AREAS.ORGANIZATIONS.DESCRIPTION' | translate }}</p>
+
+          <a routerLink="/psico-organizaciones" class="area-link">
+            {{ 'AREAS.DISCOVER' | translate }}
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="areas-cta">
+    <div class="areas-cta-content">
+      <span class="section-label">
+        {{ 'AREAS.CTA.LABEL' | translate }}
+      </span>
+
+      <h2>{{ 'AREAS.CTA.TITLE' | translate }}</h2>
+      <p>{{ 'AREAS.CTA.DESCRIPTION' | translate }}</p>
+
+      <a routerLink="/cita" class="cta-button">
+        {{ 'AREAS.CTA.BUTTON' | translate }}
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+</main>

@@ -1,0 +1,309 @@
+
+<main class="booking-page">
+
+  <!-- HERO -->
+  <section class="booking-hero">
+    <div class="booking-hero-content">
+      <span class="section-label">
+        {{ 'BOOKING.HERO.LABEL' | translate }}
+      </span>
+
+      <h1>
+        {{ 'BOOKING.HERO.TITLE' | translate }}
+        <span>{{ 'BOOKING.HERO.HIGHLIGHT' | translate }}</span>
+      </h1>
+
+      <p>{{ 'BOOKING.HERO.DESCRIPTION' | translate }}</p>
+    </div>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section class="booking-section">
+    <div class="booking-container">
+
+      <div class="booking-heading">
+        <span class="section-label">
+          {{ 'BOOKING.FORM.LABEL' | translate }}
+        </span>
+        <h2>{{ 'BOOKING.FORM.TITLE' | translate }}</h2>
+        <p>{{ 'BOOKING.FORM.DESCRIPTION' | translate }}</p>
+      </div>
+
+      <div class="booking-layout">
+
+        <div class="booking-main">
+
+          <!-- MODALIDAD -->
+          <div class="booking-panel">
+            <div class="panel-heading">
+              <span class="step-number">01</span>
+              <div>
+                <h3>{{ 'BOOKING.MODE.TITLE' | translate }}</h3>
+                <p>{{ 'BOOKING.MODE.DESCRIPTION' | translate }}</p>
+              </div>
+            </div>
+
+            <div class="mode-options">
+              <button
+                type="button"
+                class="mode-option"
+                [class.selected]="mode() === 'presencial'"
+                [attr.aria-pressed]="mode() === 'presencial'"
+                (click)="selectMode('presencial')">
+                <span class="material-symbols-outlined">
+                  location_on
+                </span>
+                <strong>{{ 'BOOKING.MODE.IN_PERSON' | translate }}</strong>
+              </button>
+
+              <button
+                type="button"
+                class="mode-option"
+                [class.selected]="mode() === 'online'"
+                [attr.aria-pressed]="mode() === 'online'"
+                (click)="selectMode('online')">
+                <span class="material-symbols-outlined">
+                  videocam
+                </span>
+                <strong>{{ 'BOOKING.MODE.ONLINE' | translate }}</strong>
+              </button>
+            </div>
+          </div>
+
+          <!-- ESPECIALIDAD -->
+          <div class="booking-panel">
+            <div class="panel-heading">
+              <span class="step-number">02</span>
+              <div>
+                <h3>{{ 'BOOKING.SPECIALTY.TITLE' | translate }}</h3>
+                <p>{{ 'BOOKING.SPECIALTY.DESCRIPTION' | translate }}</p>
+              </div>
+            </div>
+
+            <select
+              class="booking-select"
+              [value]="specialty()"
+              (change)="selectSpecialty($event)"
+              [attr.aria-label]="'BOOKING.SPECIALTY.TITLE' | translate">
+              <option value="">
+                {{ 'BOOKING.SPECIALTY.PLACEHOLDER' | translate }}
+              </option>
+              <option value="general">
+                {{ 'AREAS.GENERAL.TITLE' | translate }}
+              </option>
+              <option value="forense">
+                {{ 'AREAS.FORENSIC.TITLE' | translate }}
+              </option>
+              <option value="sex">
+                {{ 'AREAS.SEX_COACHING.TITLE' | translate }}
+              </option>
+              <option value="organizaciones">
+                {{ 'AREAS.ORGANIZATIONS.TITLE' | translate }}
+              </option>
+            </select>
+          </div>
+
+          <!-- CALENDARIO -->
+          <div class="booking-panel">
+            <div class="panel-heading">
+              <span class="step-number">03</span>
+              <div>
+                <h3>{{ 'BOOKING.DATE.TITLE' | translate }}</h3>
+                <p>{{ 'BOOKING.DATE.DESCRIPTION' | translate }}</p>
+              </div>
+            </div>
+
+            <div class="calendar">
+              <div class="calendar-header">
+                <h4>{{ monthLabel() }}</h4>
+
+                <div class="calendar-navigation">
+                  <button
+                    type="button"
+                    (click)="previousMonth()"
+                    [disabled]="!canGoPrevious()"
+                    [attr.aria-label]="'BOOKING.DATE.PREVIOUS' | translate">
+                    <span class="material-symbols-outlined">
+                      chevron_left
+                    </span>
+                  </button>
+
+                  <button
+                    type="button"
+                    (click)="nextMonth()"
+                    [attr.aria-label]="'BOOKING.DATE.NEXT' | translate">
+                    <span class="material-symbols-outlined">
+                      chevron_right
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="calendar-grid">
+                @for (day of weekDays(); track $index) {
+                  <span class="weekday">{{ day }}</span>
+                }
+
+                @for (day of calendarDays(); track $index) {
+                  @if (day === null) {
+                    <span class="calendar-empty"></span>
+                  } @else {
+                    <button
+                      type="button"
+                      class="calendar-day"
+                      [class.available]="isAvailable(day)"
+                      [class.selected]="isSelected(day)"
+                      [disabled]="!isAvailable(day)"
+                      [attr.aria-pressed]="isSelected(day)"
+                      (click)="selectDay(day)">
+                      {{ day }}
+                    </button>
+                  }
+                }
+              </div>
+
+              <div class="calendar-legend">
+                <span>
+                  <i class="legend-dot available-dot"></i>
+                  {{ 'BOOKING.DATE.AVAILABLE' | translate }}
+                </span>
+                <span>
+                  <i class="legend-dot selected-dot"></i>
+                  {{ 'BOOKING.DATE.SELECTED' | translate }}
+                </span>
+              </div>
+            </div>
+
+            <!-- HORAS -->
+            <div class="time-section">
+              <h4>{{ 'BOOKING.TIME.TITLE' | translate }}</h4>
+
+              @if (selectedDate()) {
+                <div class="time-grid">
+                  @for (time of sampleTimes; track time) {
+                    <button
+                      type="button"
+                      class="time-option"
+                      [class.selected]="selectedTime() === time"
+                      [attr.aria-pressed]="selectedTime() === time"
+                      (click)="selectedTime.set(time)">
+                      {{ time }}
+                    </button>
+                  }
+                </div>
+              } @else {
+                <p class="time-placeholder">
+                  {{ 'BOOKING.TIME.PLACEHOLDER' | translate }}
+                </p>
+              }
+            </div>
+
+            <p class="demo-note">
+              {{ 'BOOKING.DEMO' | translate }}
+            </p>
+          </div>
+        </div>
+
+        <!-- DATOS Y RESUMEN -->
+        <aside class="booking-sidebar">
+
+          <div class="booking-panel">
+            <div class="panel-heading">
+              <span class="step-number">04</span>
+              <div>
+                <h3>{{ 'BOOKING.DETAILS.TITLE' | translate }}</h3>
+                <p>{{ 'BOOKING.DETAILS.DESCRIPTION' | translate }}</p>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="booking-name">
+                {{ 'BOOKING.DETAILS.NAME' | translate }}
+              </label>
+              <input
+                id="booking-name"
+                type="text"
+                autocomplete="name"
+                [value]="name()"
+                (input)="updateName($event)">
+            </div>
+
+            <div class="form-field">
+              <label for="booking-email">
+                {{ 'BOOKING.DETAILS.EMAIL' | translate }}
+              </label>
+              <input
+                id="booking-email"
+                type="email"
+                autocomplete="email"
+                [value]="email()"
+                (input)="updateEmail($event)">
+            </div>
+
+            <div class="form-field">
+              <label for="booking-phone">
+                {{ 'BOOKING.DETAILS.PHONE' | translate }}
+              </label>
+              <input
+                id="booking-phone"
+                type="tel"
+                autocomplete="tel"
+                [value]="phone()"
+                (input)="updatePhone($event)">
+            </div>
+
+            <label class="privacy-checkbox">
+              <input
+                type="checkbox"
+                [checked]="privacyAccepted()"
+                (change)="updatePrivacy($event)">
+              <span>
+                {{ 'BOOKING.DETAILS.PRIVACY' | translate }}
+              </span>
+            </label>
+
+            <div class="booking-summary">
+              <h4>{{ 'BOOKING.SUMMARY.TITLE' | translate }}</h4>
+
+              <p>
+                <strong>{{ 'BOOKING.SUMMARY.MODE' | translate }}:</strong>
+                {{ modeLabel() }}
+              </p>
+
+              <p>
+                <strong>{{ 'BOOKING.SUMMARY.DATE' | translate }}:</strong>
+                {{ selectedDateLabel() || '—' }}
+              </p>
+
+              <p>
+                <strong>{{ 'BOOKING.SUMMARY.TIME' | translate }}:</strong>
+                {{ selectedTime() || '—' }}
+              </p>
+            </div>
+
+            <button
+              type="button"
+              class="submit-button"
+              disabled>
+              {{ 'BOOKING.DETAILS.BUTTON' | translate }}
+              <span class="material-symbols-outlined">
+                arrow_forward
+              </span>
+            </button>
+          </div>
+
+          <div class="confidentiality-card">
+            <span class="material-symbols-outlined">
+              lock
+            </span>
+            <div>
+              <h4>{{ 'BOOKING.PRIVACY.TITLE' | translate }}</h4>
+              <p>{{ 'BOOKING.PRIVACY.DESCRIPTION' | translate }}</p>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>

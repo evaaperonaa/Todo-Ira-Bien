@@ -4,7 +4,10 @@ import {
   provideBrowserGlobalErrorListeners
 } from '@angular/core';
 
-import { provideRouter } from '@angular/router';
+import {
+  provideRouter,
+  withInMemoryScrolling
+} from '@angular/router';
 import { provideHttpClient, HttpClient } from '@angular/common/http';
 
 import {
@@ -17,7 +20,7 @@ import { Observable } from 'rxjs';
 import { routes } from './app.routes';
 
 export class CustomTranslateLoader implements TranslateLoader {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   getTranslation(lang: string): Observable<any> {
     return this.http.get<Record<string, string>>(
@@ -29,7 +32,13 @@ export class CustomTranslateLoader implements TranslateLoader {
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideRouter(routes),
+    provideRouter(
+      routes,
+      withInMemoryScrolling({
+        scrollPositionRestoration: 'top',
+        anchorScrolling: 'enabled'
+      })
+    ),
     provideHttpClient(),
     provideTranslateService({
       loader: {

@@ -102,5 +102,96 @@
       "DESCRIPTION": "Pots sol·licitar una cita presencial o en línia i fer el primer pas cap al teu benestar.",
       "BUTTON": "Demanar cita"
     }
+  },
+  "AREAS": {
+    "HERO": {
+      "LABEL": "ÀREES DE TREBALL",
+      "TITLE": "Un acompanyament",
+      "HIGHLIGHT": "per a cada necessitat",
+      "DESCRIPTION": "Coneix les diferents àrees de treball i descobrix quina pot ajustar-se millor al que estàs buscant."
+    },
+    "DISCOVER": "Descobrir especialitat",
+    "GENERAL": {
+      "LABEL": "BENESTAR EMOCIONAL",
+      "TITLE": "Psicologia general",
+      "DESCRIPTION": "Un espai d'acompanyament psicològic per a abordar dificultats emocionals, situacions personals i qüestions relacionades amb el benestar."
+    },
+    "FORENSIC": {
+      "LABEL": "ÀMBIT JURÍDIC",
+      "TITLE": "Psicologia forense",
+      "DESCRIPTION": "Avaluació psicològica especialitzada en contextos jurídics, amb atenció a les necessitats de cada cas."
+    },
+    "SEX_COACHING": {
+      "LABEL": "SEXUALITAT I RELACIONS",
+      "TITLE": "Sex Coaching",
+      "DESCRIPTION": "Un espai d'orientació i acompanyament per a explorar qüestions relacionades amb la sexualitat, la intimitat i les relacions."
+    },
+    "ORGANIZATIONS": {
+      "LABEL": "ENTORN PROFESSIONAL",
+      "TITLE": "Psicologia de les organitzacions",
+      "DESCRIPTION": "Una perspectiva psicològica orientada al benestar laboral, les relacions professionals i el desenvolupament de les organitzacions."
+    },
+    "CTA": {
+      "LABEL": "ESTEM ACÍ PER A AJUDAR-TE",
+      "TITLE": "No saps per on començar?",
+      "DESCRIPTION": "Pots posar-te en contacte per a resoldre els teus dubtes i consultar quin tipus d'atenció pot ajustar-se a les teues necessitats.",
+      "BUTTON": "Demanar cita"
+    }
+  },
+  "BOOKING": {
+    "HERO": {
+      "LABEL": "RESERVA LA TEUA SESSIÓ",
+      "TITLE": "El primer pas",
+      "HIGHLIGHT": "comença ací",
+      "DESCRIPTION": "Tria com preferixes realitzar la teua sessió i troba el moment que millor s'adapte a tu."
+    },
+    "FORM": {
+      "LABEL": "DEMANAR CITA",
+      "TITLE": "Sol·licita la teua primera cita",
+      "DESCRIPTION": "Selecciona la modalitat, l'àrea de consulta i l'horari que preferisques."
+    },
+    "MODE": {
+      "TITLE": "Modalitat de la sessió",
+      "DESCRIPTION": "Com preferixes realitzar la teua consulta?",
+      "IN_PERSON": "Presencial",
+      "ONLINE": "En línia"
+    },
+    "SPECIALTY": {
+      "TITLE": "Motiu de la consulta",
+      "DESCRIPTION": "Selecciona l'àrea de treball.",
+      "PLACEHOLDER": "Selecciona una especialitat"
+    },
+    "DATE": {
+      "TITLE": "Data i horari",
+      "DESCRIPTION": "Selecciona un dia en el calendari.",
+      "PREVIOUS": "Mes anterior",
+      "NEXT": "Mes següent",
+      "AVAILABLE": "Dia disponible",
+      "SELECTED": "Dia seleccionat"
+    },
+    "TIME": {
+      "TITLE": "Selecciona una hora",
+      "PLACEHOLDER": "Selecciona primer un dia del calendari."
+    },
+    "DETAILS": {
+      "TITLE": "Les teues dades",
+      "DESCRIPTION": "Informació de contacte per a gestionar la teua cita.",
+      "NAME": "Nom i cognoms",
+      "EMAIL": "Correu electrònic",
+      "PHONE": "Telèfon (opcional)",
+      "PRIVACY": "He llegit i accepte la política de privacitat.",
+      "BUTTON": "Confirmar cita"
+    },
+    "SUMMARY": {
+      "TITLE": "Resum de la teua cita",
+      "MODE": "Modalitat",
+      "DATE": "Data",
+      "TIME": "Hora"
+    },
+    "PRIVACY": {
+      "TITLE": "La teua privacitat és important",
+      "DESCRIPTION": "Les dades que facilites s'utilitzaran per a gestionar la teua sol·licitud de cita, d'acord amb la política de privacitat. No cal incloure informació clínica en este formulari."
+    },
+    "DEMO": "Calendari de demostració. Els horaris mostrats no representen disponibilitat real i les reserves encara no estan habilitades."
   }
 }
