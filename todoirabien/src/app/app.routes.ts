@@ -23,26 +23,26 @@ export const routes: Routes = [
     component: Especialidades
   },
   {
-    path: 'especialidades/psico-general',
+    path: 'psico-general',
     component: PsicoGeneral
   },
   {
-    path: 'especialidades/psico-forense',
+    path: 'psico-forense',
     component: PsicoForense
   },
   {
-    path: 'especialidades/sex-coaching',
+    path: 'sex-coaching',
     component: SexCoaching
   },
   {
-    path: 'especialidades/psico-organizaciones',
+    path: 'psico-organizaciones',
     component: PsicoOrganizaciones
   },
   {
-  path: 'cita',
-  loadComponent: () =>
-    import('./pages/cita/cita').then(m => m.Cita)
-},
+    path: 'cita',
+    loadComponent: () =>
+      import('./pages/cita/cita').then(m => m.Cita)
+  },
   {
     path: '**',
     redirectTo: ''

@@ -1,11 +1,12 @@
+
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-sex-coaching',
-  imports: [],
+  standalone: true,
+  imports: [RouterLink],
   templateUrl: './sex-coaching.html',
-  styleUrl: './sex-coaching.css',
+  styleUrl: './sex-coaching.css'
 })
-export class SexCoaching {
-
-}
+export class SexCoaching {}
