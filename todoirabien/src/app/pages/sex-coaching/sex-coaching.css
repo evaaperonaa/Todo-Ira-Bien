@@ -48,6 +48,8 @@
   line-height: 1.85;
 }
 
+/* HERO */
+
 .sex-hero {
   padding: 110px 0;
   background: rgb(0 140 150 / 20%);
@@ -94,8 +96,9 @@
   border-radius: 20px;
 }
 
-.sex-intro,
-.sex-feature {
+/* INTRODUCCIÓN */
+
+.sex-intro {
   padding: 110px 0;
   background: white;
 }
@@ -103,6 +106,8 @@
 .sex-copy p + p {
   margin-top: 18px;
 }
+
+/* TARJETAS */
 
 .sex-topics {
   padding: 105px 0;
@@ -117,7 +122,7 @@
 
 .sex-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
 }
 
@@ -152,9 +157,18 @@
   font-size: 0.95rem;
 }
 
+/* SECCIÓN INFORMATIVA */
+
+.sex-feature {
+  padding: 110px 0;
+  background: white;
+}
+
+/* CTA FINAL - TURQUESA SUAVE */
+
 .sex-cta {
   padding: 100px 0;
-  background: #002062;
+  background: rgb(0 140 150 / 20%);
   text-align: center;
 }
 
@@ -162,19 +176,29 @@
   max-width: 720px;
 }
 
-.sex-cta h2,
-.sex-cta p {
-  color: white;
+.sex-cta h2 {
+  color: #002062;
 }
 
 .sex-cta p {
+  color: #45556b;
   margin-bottom: 30px;
-  color: #e2e9f3;
 }
 
 .sex-cta .sex-label {
-  color: #7ed7d7;
+  color: #008c96;
 }
+
+.sex-cta .sex-button {
+  background: #002062;
+  color: #ffffff;
+}
+
+.sex-cta .sex-button:hover {
+  background: #008c96;
+}
+
+/* RESPONSIVE - TABLETS */
 
 @media (max-width: 900px) {
   .sex-hero-grid,
@@ -184,7 +208,7 @@
   }
 
   .sex-cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sex-hero,
@@ -195,6 +219,8 @@
     padding: 70px 0;
   }
 }
+
+/* RESPONSIVE - MÓVILES */
 
 @media (max-width: 550px) {
   .sex-cards {
